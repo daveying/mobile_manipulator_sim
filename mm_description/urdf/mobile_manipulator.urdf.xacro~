@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="mm" >
+       
+  <property name="arm_prefix" value="arm_" /> <!-- I need name mobile base as base_link for navigation, so it will conflict with ur base link if prefix is not set. -->
+  
+  <!-- common stuff -->
+  <xacro:include filename="$(find mm_description)/urdf/common.gazebo" />
+
+  <!-- ur5 -->
+  <xacro:include filename="$(find mm_description)/urdf/ur5.urdf.xacro" />
+
+  <!-- mobile base -->
+  <xacro:include filename="$(find mm_description)/urdf/mobile_base.xacro" />
+
+  <!-- arm -->
+  <xacro:ur5_robot prefix="${arm_prefix}" joint_limited="true"/>
+  <xacro:mobile_base />
+<!--
+  <link name="world" />
+
+  <joint name="world_2_base_link" type="fixed">
+    <parent link="world" />
+    <child link = "base_link" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+  -->
+  <joint name="base_link_2_${arm_prefix}base_link" type="fixed">
+    <parent link="base_link" />
+    <child link="arm_base_link" />
+    <origin xyz="0.40 0 0.823" rpy="0 0 -1.5708" />
+  </joint>
+  
+  <link name="xtion_link">
+      <inertial>
+        <mass value="1e-5" />
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+      </inertial>
+
+      <visual>
+        <origin xyz="0.02 -0.03 0" rpy="1.57 0 1.57" />
+        <geometry>
+          <mesh filename="package://mm_description/meshes/mobile_base/asus_xtion_pro_live_camera.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+        
+      </visual>
+
+      <collision>
+        <origin xyz="0.02 -0.03 0" rpy="1.57 0 1.57" />
+        <geometry>
+           <mesh filename="package://mm_description/meshes/mobile_base/asus_xtion_pro_live_camera.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision >
+  </link>
+
+  <joint name="${arm_prefix}base_link_2_xtion_link" type="fixed">
+	<parent link="${arm_prefix}base_link"/>
+	<child link="xtion_link"/>
+	<origin xyz="-0.3541575 0.1507695 0.779517" rpy="-0.369 0.825 1.119"/>
+  </joint>
+
+</robot>

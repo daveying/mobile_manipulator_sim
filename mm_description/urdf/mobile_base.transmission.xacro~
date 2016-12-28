@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="mobile_base_transmission">
+<!--
+    <transmission name="wheel1_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="base_link_2_wheel1">
+        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="$wheel1_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+    
+    <transmission name="wheel2_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="base_link_2_wheel2">
+        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="$wheel2_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+    
+    <transmission name="wheel3_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="base_link_2_wheel3">
+        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="$wheel3_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+ 
+    <transmission name="wheel4_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="base_link_2_wheel4">
+        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="$wheel4_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+-->
+  </xacro:macro> 
+
+</robot>

@@ -1,0 +1,42 @@
+<robot name="ur5">
+
+	<link name="world"/>
+	<link name="base_link">
+		<visual>
+			<geometry>
+				<mesh filename="package://ur_description/meshes/ur5/visual/base.dae"/>
+			</geometry>
+		  <material name="gray">
+			<color rgba="0.3 0.3 0.3 1.0"/>
+		  </material>
+			
+		</visual>
+	</link>
+	<link name="shoulder_pan_link">
+		<visual>
+			<geometry>
+				<mesh filename="package://ur_description/meshes/ur5/visual/shoulder.dae"/>
+			</geometry>
+		  <material name="gray">
+			<color rgba="0.3 0.3 0.3 1.0"/>
+		  </material>
+			
+		</visual>
+	</link>
+	<joint name="world_to_base_link" type="fixed">
+		<parent link="world"/>
+		<child link="base_link"/>
+		<origin xyz="0 1 1" rpy="0 0 0"/>
+	</joint>
+
+	<joint name="base_link_to_shoulder_pan_link" type="revolute">
+		<parent link="base_link"/>
+		<child link="shoulder_pan_link"/>
+		<origin xyz="0 0 0.3" rpy="0 0 0"/>
+		<axis xyz="0 0 1"/>
+		<limit effort="1" velocity="1" lower="-3.14" upper="3.14"/>
+	</joint>
+
+
+</robot>
+

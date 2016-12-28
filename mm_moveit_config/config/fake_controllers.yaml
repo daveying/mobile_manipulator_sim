@@ -1,0 +1,9 @@
+controller_list:
+  - name: fake_manipulator_controller
+    joints:
+      - arm_shoulder_pan_joint
+      - arm_shoulder_lift_joint
+      - arm_elbow_joint
+      - arm_wrist_1_joint
+      - arm_wrist_2_joint
+      - arm_wrist_3_joint

@@ -1,0 +1,26 @@
+<package>
+  <name>mobile_manipulator</name>
+  <version>0.0.1</version>
+  <description>
+      description, simulation and utilities for mobile manipulator.
+  </description>
+
+  <maintainer email="daveying@163.com">Dave Da</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">https://github.com/daveying/mobile_manipulator</url>
+
+  <author email="daveying@163.com">Dave Da</author>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>mm_moveit_config</run_depend>
+  <run_depend>mm_gazebo</run_depend>
+  <run_depend>mm_description</run_depend>
+
+
+  <export>
+    <metapackage/>
+  </export>
+</package>
