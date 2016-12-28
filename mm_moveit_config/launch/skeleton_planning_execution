@@ -1,63 +1,13 @@
 <launch>
-
-  <!-- By default, we do not start a database (it can be large) -->
-  <arg name="db" default="false" />
-  <!-- Allow user to specify database location -->
-  <arg name="db_path" default="$(find mm_moveit_config)/default_warehouse_mongo_db" />
-
-  <!-- By default, we are not in debug mode -->
+  <arg name="sim" default="false" />
   <arg name="debug" default="false" />
-
-  <!-- Load the URDF, SRDF and other .yaml configuration files on the param server -->
-  <include file="$(find mm_moveit_config)/launch/planning_context.launch">
-    <arg name="load_robot_description" value="true"/>
-            <!-- ########### $(find mm_moveit_config)/launch/planning_context.launch -->
-            <launch>
-              <!-- By default we do not overwrite the URDF. Change the following to true to change the default behavior -->
-              <arg name="load_robot_description" default="false"/>
-
-              <!-- The name of the parameter under which the URDF is loaded -->
-              <arg name="robot_description" default="robot_description"/>
-
-              <!-- Load universal robot description format (URDF) -->
-              <param if="$(arg load_robot_description)" name="$(arg robot_description)" textfile="$(find mm_description)/urdf/mobile_manipulator.urdf"/>
-
-              <!-- The semantic description that corresponds to the URDF -->
-              <param name="$(arg robot_description)_semantic" textfile="$(find mm_moveit_config)/config/mm.srdf" />
-              
-              <!-- Load updated joint limits (override information from URDF) -->
-              <group ns="$(arg robot_description)_planning">
-                <rosparam command="load" file="$(find mm_moveit_config)/config/joint_limits.yaml"/>
-              </group>
-
-              <!-- Load default settings for kinematics; these settings are overridden by settings in a node's namespace -->
-              <group ns="$(arg robot_description)_kinematics">
-                <rosparam command="load" file="$(find mm_moveit_config)/config/kinematics.yaml"/>
-              </group>
-              
-            </launch>
-            <!-- ########### end of $(find mm_moveit_config)/launch/planning_context.launch -->
-  </include>
-
-  <!-- If needed, broadcast static tf for robot root -->
-    <node pkg="tf" type="static_transform_publisher" name="virtual_joint_broadcaster_0" args="0 0 0 0 0 0 odom base_link 100" />
-
-
-  <!-- We do not have a robot connected, so publish fake joint states -->
-  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
-    <param name="/use_gui" value="false"/>
-    <rosparam param="/source_list">[/move_group/fake_controller_joint_states]</rosparam>
-  </node>
-
-  <!-- Given the published joint states, publish tf for the robot links -->
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
-
-  <!-- Run the main MoveIt executable without trajectory execution (we do not have controllers configured by default) -->
+    
+  <!-- Remap follow_joint_trajectory -->
+  <remap if="$(arg sim)" from="/follow_joint_trajectory" to="/arm_controller/follow_joint_trajectory"/>
+  
+  <!-- Launch moveit -->
   <include file="$(find mm_moveit_config)/launch/move_group.launch">
-    <arg name="allow_trajectory_execution" value="true"/>
-    <arg name="fake_execution" value="true"/>
-    <arg name="info" value="true"/>
-    <arg name="debug" value="$(arg debug)"/>
+    <arg name="debug" default="$(arg debug)" />
             <!-- ########### $(find mm_moveit_config)/launch/move_group.launch -->
             <launch>
               <include file="$(find mm_moveit_config)/launch/planning_context.launch" >
@@ -240,62 +190,4 @@
             </launch>
             <!-- ########### end of $(find mm_moveit_config)/launch/move_group.launch -->
   </include>
-
-  <!-- Run Rviz and load the default config to see the state of the move_group node -->
-  <include file="$(find mm_moveit_config)/launch/moveit_rviz.launch">
-    <arg name="config" value="true"/>
-    <arg name="debug" value="$(arg debug)"/>
-            <!-- ########### $(find mm_moveit_config)/launch/moveit_rviz.launch -->
-            <launch>
-              <arg name="debug" default="false" />
-              <arg unless="$(arg debug)" name="launch_prefix" value="" />
-              <arg     if="$(arg debug)" name="launch_prefix" value="gdb --ex run --args" />
-
-              <arg name="config" default="false" />
-              <arg unless="$(arg config)" name="command_args" value="" />
-              <arg     if="$(arg config)" name="command_args" value="-d $(find mm_moveit_config)/launch/moveit.rviz" />
-              
-              <node name="$(anon rviz)" launch-prefix="$(arg launch_prefix)" pkg="rviz" type="rviz" respawn="false"
-	            args="$(arg command_args)" output="screen">
-                <rosparam command="load" file="$(find mm_moveit_config)/config/kinematics.yaml"/>
-              </node>
-            </launch>
-            <!-- ########### end of $(find mm_moveit_config)/launch/moveit_rviz.launch -->
-  </include>
-
-  <!-- If database loading was enabled, start mongodb as well -->
-  <include file="$(find mm_moveit_config)/launch/default_warehouse_db.launch" if="$(arg db)">
-    <arg name="moveit_warehouse_database_path" value="$(arg db_path)"/>
-            <!-- ########### $(find mm_moveit_config)/launch/default_warehouse_db.launch -->
-            <launch>
-              <arg name="reset" default="false"/>
-              <!-- If not specified, we'll use a default database location -->
-              <arg name="moveit_warehouse_database_path" default="$(find mm_moveit_config)/default_warehouse_mongo_db" />
-
-              <!-- Launch the warehouse with the configured database location -->
-              <include file="$(find mm_moveit_config)/launch/warehouse.launch">
-                <arg name="moveit_warehouse_database_path" value="$(arg moveit_warehouse_database_path)" />
-                        <!-- ########### $(find mm_moveit_config)/launch/warehouse.launch -->
-                        <launch>                         
-                          <!-- The path to the database must be specified -->
-                          <arg name="moveit_warehouse_database_path" />
-
-                          <!-- Load warehouse parameters -->  
-                          <include file="$(find mm_moveit_config)/launch/warehouse_settings.launch.xml" />
-
-                          <!-- Run the DB server -->
-                          <node name="$(anon mongo_wrapper_ros)" cwd="ROS_HOME" type="mongo_wrapper_ros.py" pkg="warehouse_ros">
-                            <param name="overwrite" value="false"/>
-                            <param name="database_path" value="$(arg moveit_warehouse_database_path)" />
-                          </node>
-                        </launch>
-                        <!-- ########### end of $(find mm_moveit_config)/launch/warehouse.launch -->
-              </include>
-
-              <!-- If we want to reset the database, run this node -->
-              <node if="$(arg reset)" name="$(anon moveit_default_db_reset)" type="moveit_init_demo_warehouse" pkg="moveit_ros_warehouse" respawn="false" output="screen" />
-            </launch>
-            <!-- ########### end of $(find mm_moveit_config)/launch/default_warehouse_db.launch -->
-  </include>
-
 </launch>
