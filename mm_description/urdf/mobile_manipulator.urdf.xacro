@@ -5,33 +5,31 @@
   <property name="arm_prefix" value="arm_" /> <!-- I need name mobile base as base_link for navigation, so it will conflict with ur base link if prefix is not set. -->
   
   <!-- common stuff -->
-  <xacro:include filename="$(find mm_description)/urdf/common.gazebo" />
+  <xacro:include filename="$(find mm_description)/urdf/mobile_manipulator.gazebo.xacro" />
 
   <!-- ur5 -->
   <xacro:include filename="$(find mm_description)/urdf/ur5/ur5.urdf.xacro" />
 
   <!-- mobile base -->
   <xacro:include filename="$(find mm_description)/urdf/mobile_base/mobile_base.xacro" />
-
+  <!--xacro:include filename="$(find mm_description)/urdf/sensors/asus_xtion_camera.urdf.xacro" /-->
+  
   <!-- arm -->
   <xacro:ur5_robot prefix="${arm_prefix}" joint_limited="true"/>
   <xacro:mobile_base />
-<!--
-  <link name="world" />
+  
 
-  <joint name="world_2_base_link" type="fixed">
-    <parent link="world" />
-    <child link = "base_link" />
-    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
-  </joint>
-  -->
   <joint name="base_link_2_${arm_prefix}base_link" type="fixed">
     <parent link="base_link" />
     <child link="${arm_prefix}base_link" />
     <origin xyz="0.40 0 0.823" rpy="0 0 -1.5708" />
   </joint>
   
-  <link name="xtion_link">
+  <!--xacro:asus_xtion_camera name="xtion1" parent="${arm_prefix}base_link" tilt="0">
+    <origin xyz="-0.2841575 0.0807695 0.779517" rpy="-0.369 0.825 1.119"/>
+  </xacro:asus_xtion_camera-->
+  
+  <link name="xtion1_frame">
       <inertial>
         <mass value="1e-5" />
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -54,10 +52,11 @@
       </collision >
   </link>
 
-  <joint name="${arm_prefix}base_link_2_xtion_link" type="fixed">
+  <joint name="${arm_prefix}base_link_2_xtion1_frame" type="fixed">
 	<parent link="${arm_prefix}base_link"/>
-	<child link="xtion_link"/>
+	<child link="xtion1_frame"/>
 	<origin xyz="-0.3541575 0.1507695 0.779517" rpy="-0.369 0.825 1.119"/>
   </joint>
 
+  <xacro:kinect_camera_gazebo_v0 name="xtion1" />
 </robot>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="asus" >
+       
+   <xacro:include filename="$(find mm_description)/urdf/sensors/asus_xtion_camera.urdf.xacro" />
+       
+</robot>
