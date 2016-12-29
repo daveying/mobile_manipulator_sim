@@ -1,0 +1,694 @@
+#VRML V2.0 utf8
+
+PROTO Car [field SFColor car_color .2 .2 .2
+               field SFColor  magnetic_color .7 0.8 0.9                      
+               field SFFloat wheel_radius .0735
+               field SFColor ceiling_color .2 .2 .2
+               field SFColor wheel_color .8 .8 .8
+			   field SFFloat wheel_height .052
+			   field SFColor wheel_shaft_color .5 .5 .7
+			   field SFColor battery_box_color .6 .6 .1
+			   field SFRotation	robot_rotation	1 0 0 1.5708
+			 
+	       ]
+
+		   {
+			   
+		   Transform {
+		   translation		0 0 0 
+		   
+		   children	[							
+			   
+		   #wheels 
+	 	   DEF wheels Transform  {
+		   translation	.176 0.036 -.07325
+		   rotation	0 0 1 1.5708
+		   children [
+			   Shape {
+				   appearance Appearance {
+					   material  Material {diffuseColor IS wheel_color }
+				   }
+				   geometry	 Cylinder { radius IS wheel_radius height IS wheel_height }
+			   }
+		   ]
+		   }
+		   Transform {
+		   translation -.176 0.036 -0.074
+		   rotation	0 0 1 -1.5708
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor  IS wheel_color }	
+				   }
+				   geometry	Cylinder { radius IS wheel_radius height  IS wheel_height }
+			   }
+		   ]
+		   } #end of two wheels
+		   DEF wheel_shaft Transform {
+		   translation -.176 .036 -.074
+		   rotation	0 0 1 -1.5708
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS wheel_shaft_color }
+				   }
+				   geometry	Cylinder { radius .015 height .054 }
+			   }
+		   ]
+		   } 
+		   Transform {
+		   translation .176 .036 -.074
+		   rotation	0 0 1 1.5708
+		   children	[
+			   Shape { 
+				   appearance Appearance {
+					   material	Material { diffuseColor IS wheel_shaft_color }
+				   }
+				   geometry	Cylinder {radius .015 height .054}
+			   }
+		   ]
+		   }
+		   #sideboards
+		   DEF side_board Transform {
+		   translation	.1475 .115 0
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS car_color }
+				   }   geometry	Box	{ size .005 .230 .350}
+			   }
+		   ]
+		   }  #end of sideboard_1
+		   Transform {
+		   translation -.1475 .115 0
+		   rotation	0 1 0 3.1415
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS car_color }					
+				   }
+				   geometry	Box	{  size .005 .230 .350}
+			   }
+		   ]
+		   
+		   
+		   }	#end of side board_2
+		   #front corner
+		   Transform {
+		   translation .135 .1825 -.190
+		   rotation	0 1 0 .7854
+		   children	[
+			   Shape {
+				   appearance Appearance { 
+					   material Material { diffuseColor IS car_color }
+				   }
+				   geometry	Box	{size .005 .095 .041}
+			   }
+		   ]			   
+		   }
+		   Transform {
+		   translation -.135 .1825 -.190
+		   rotation	0 1 0 -.7854
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material {diffuseColor IS car_color }
+				   }
+				   geometry	Box	{size .005 .095 .041}
+			   }
+		   ]
+		   } #end of front corner board
+		   #rear corner boards
+		   Transform {
+		   translation .135 .115 .190
+		   rotation	0 1 0 -.7854
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material {diffuseColor  IS car_color }
+				   }
+				   geometry	Box	{ size .005 .230 .041 }
+			   }
+		   ]
+		   } 
+		   Transform {
+		   translation -.135 .115 .190
+		   rotation	0 1 0 .7854
+		   children	[
+			   Shape { 
+				   appearance Appearance { 
+					   material Material	{ diffuseColor IS car_color }
+				   }
+				   geometry	Box	{size .005 .230 .041}
+			   }
+		   ]
+		   }  #end of rearconer board
+		   #front board
+		   Transform {
+		   translation 0 .1825 -.205
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS car_color }
+
+				   }
+				   geometry	Box	{ size .240 .095 .005}
+			   }
+		   ]
+		   } #end of front board
+		   #rear board
+		   Transform { 
+			   translation 0 .134 .205
+			   children	[
+				   Shape {
+					   appearance Appearance {
+						   material Material{ diffuseColor IS car_color } 
+				   }
+				   geometry	Box	{ size .240 .192 .005}
+				   }
+			   ]
+		   } #end of rear board
+		   #ceiling
+		   DEF ceiling_1 Transform {
+		   translation 0 .230 .095
+		   children	[
+			   Shape { 
+				   appearance Appearance { 
+					   material	Material { diffuseColor IS ceiling_color transparency .2}
+
+				   }
+				   geometry	Box	{size .310 .005 .180}
+			   }
+		   ]
+		   } 
+		   Transform {
+		   translation .135 .230 .185
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS car_color transparency .2}
+				   }
+				   geometry	Cylinder { radius .020 height .005}
+			   }
+		   ]
+		   } 
+		   Transform {
+		   translation -.135 .230 .185
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS car_color transparency .2}
+				   }
+				   geometry	Cylinder { radius .020 height .005}
+			   }
+		   ]
+		   } 
+		   Transform {
+		   translation 0 .230 .195
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS car_color transparency .2}
+				   }
+				   geometry	Box	{size .270 .005 .020}
+			   }
+		   ]
+		   }   #end of ceiling1
+		   DEF ceiling_2 Transform {
+		   translation 0 .230 -.1225
+		   children	[
+			   Shape	{
+				   appearance Appearance {
+					   material	Material {  diffuseColor IS ceiling_color transparency .2}
+				   }
+				   geometry	Box	{ size .360 .005 .255}
+			   }   
+		   ]
+		   }
+		   Transform {
+		   translation .155 .230 -0.24525
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS car_color transparency .2}
+				   }
+				   geometry	Cylinder { radius .025 height .005}
+			   }
+		   ]
+		   }
+		   Transform {
+		   translation -.155 .230 -0.24525
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS car_color transparency .2}
+				   }
+				   geometry	Cylinder { radius .025 height .005}
+			   }
+		   ]
+		   }
+		   Transform {
+		   translation 0 .230 -.25775
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS car_color transparency .2}
+				   }
+				   geometry	Box { size .330 .005 .025 }
+			   }
+		   ]
+		   }	  #end of ceiling 2
+		   Transform {
+		   translation .155 .230 .005
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material {diffuseColor IS car_color transparency .2}
+				   }
+				   geometry	Cylinder { radius .025 height .005}
+			   }
+		   ]
+		   }
+		   Transform {
+		   translation -.155 .230 .005
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS car_color transparency .2}
+				   }
+				   geometry	Cylinder {radius .025 height .005}
+			   }
+		   ]
+		   }
+		   Transform {
+		   translation 0 .038 .156
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material {diffuseColor IS car_color }
+				   }
+				   geometry	Box	{size  .240 .005 .098}
+			   }
+		   ]
+		   }	#end of rear_kit_1
+		   Transform {
+		   translation .099 .019 .205
+		   children	[
+			   Shape { 
+				   appearance Appearance {
+					   material	Material { diffuseColor IS car_color }
+				   }
+				   geometry	Box	{ size .042 .038 .005}
+			   }
+		   ]
+		   }
+		   Transform {
+			   translation -.099 .019 .205
+			   children	[
+				   Shape {
+					   appearance Appearance {
+						   material	Material {diffuseColor IS car_color }
+					   }
+					   geometry	Box	{size .042 .038 .005}
+				   }
+			   ]
+		   }	#end of rear_kit_2_fixed
+		   Transform {
+		   translation .078 .019 .156
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS car_color }
+				   }
+				   geometry	Box	{ size .005 .038 .098}
+			   }
+		   ]
+		   }
+		   Transform {
+		   translation -.078 .019 .156 
+		   children	[ 
+			   Shape { 
+				   appearance Appearance { 
+					   material Material { diffuseColor IS car_color }
+				   }
+				   geometry	Box	{size .005 .038 .098}
+			   }
+		   ]
+		   }  #end of rear_kit_3_fixed
+		   Transform {
+		   translation 0 .019 .107
+		   children	[
+			   Shape { 
+				   appearance Appearance {
+					   material	Material { diffuseColor IS car_color }
+				   }
+				   geometry	Box	{ size .240 .038 .005}
+			   }
+		   ]
+		   }
+		   DEF electro_magnetic Transform {
+		   translation 0 .030 -.125
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS magnetic_color }
+				   }
+				   geometry	Box { size .080 .060 .100}
+			   }
+		   ]
+		   } #end of electro_magnetic
+		   Transform {
+		   translation 0 .030 -.195
+		   rotation	1 0 0 -1.5708
+		   children	[ 
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor .5 .6 .3}
+				   }
+				   geometry	Cylinder {radius .010 height .040}
+			   }
+		   ]
+		   }   #end of tiexin
+		   DEF kicker Transform {
+			   translation 0 .030 -.215
+			   rotation	1 0 0 -1.5708
+			   children	[
+				   Shape {
+					   appearance Appearance {
+						   material	Material { diffuseColor .3 .3 .5}
+
+					   }
+					   geometry	Cylinder { radius .050 height .010}
+				   }
+			   ]
+		   }	#end of kicker
+		   DEF vision_support Transform {
+		   translation		0 .3675 -.194
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor .4 .5 .2}
+				   }
+				   geometry	Cylinder { radius .008 height .275}
+			   }
+		   ]
+		   }
+		   Transform {
+		   translation .034 .3675 -.142
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor .4 .5 .2 }
+				   }
+				   geometry	Cylinder { radius .008 height .275}
+			   }
+		   ]
+		   }
+		   Transform {
+		   translation -.034 .3675 -.142
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material {diffuseColor .4 .5 .2}
+				   }
+				   geometry	Cylinder { radius .008 height .275}
+			   }
+		   ]
+		   }  #end of vision support
+		   DEF glass_top_cover Transform {
+		   translation 0 .505 -.160 
+		   children	[
+			   Shape { 
+				   appearance Appearance { 
+					   material Material { diffuseColor .1 1 1}
+				   }
+				   geometry	Cylinder { radius .060 height .005}
+			   }
+		   ]
+		   }
+		   DEF glass_bottom_cover Transform {
+		   translation 0 .590 -.160
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material {diffuseColor .1 1 1}
+				   }
+				   geometry	Cylinder {radius .060 height .005}
+			   }
+		   ]
+		   }   #end of glass support
+		   Transform {
+		   translation 0 .5475 -.160
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material {diffuseColor .4 .1 .8 transparency  .5}
+				   }
+				   geometry	Cylinder { radius .050 height .080 bottom FALSE top FALSE }
+			   }
+		   ]
+		   }  #end of glass
+		   Transform {
+		   translation 0 .375 -.160
+		   children	[
+			   Shape {
+				   appearance Appearance { 
+					   material	Material { diffuseColor .5 .3 .7}
+				   }
+				   geometry	Cylinder {radius .030 height .045}
+			   }
+		   ]
+		   } #end of carema
+		   Transform {
+		   translation .120 .0675 -.175
+		   children[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS car_color }
+				   }
+				   geometry	Box	{size .060 .135 .005}
+			   }
+		   ]
+		   }
+		   Transform {
+		   translation -.120 .0675 -.175
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material {  diffuseColor IS car_color }
+				   }												   
+				   geometry	Box	{size .060 .125 .005}
+			   }
+		   ]
+		   }  #end og front kit
+		   DEF battery Transform {
+		   translation 0 .055 .035
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS battery_box_color }
+				   }
+				   geometry	Box	{ size .190 .110 .144}
+			   }
+		   ]
+		   }   #end of batterybox
+		   #hand
+		   Transform {
+		   translation -.120 .0225 -.205
+		   rotation	1 0 0 -1.5708
+		   children	[
+			   Shape { 
+				   appearance Appearance { 
+					   material	Material { diffuseColor 0 0 0 }
+				   }										   
+				   geometry	Cylinder{ radius .010 height.060}
+			   }
+		   ]
+		   }
+		   Transform {
+		   translation .120 .0225 -.205
+		   rotation	1 0 0 -1.5708
+		   children	[
+			   Shape { 
+				   appearance Appearance {
+					   material	Material { diffuseColor 0 0 0 }
+
+				   }
+				   geometry	Cylinder { radius .010 height .060}
+			   }
+		   ]
+		   }
+		   Transform {
+		   translation .120 .080 -.205
+		   rotation	1 0 0 -1.5708
+		   children	[
+			   Shape { 
+				   appearance Appearance {
+					   material	Material {  diffuseColor 0 0 0 }
+
+				   }
+				   geometry	Cylinder {radius .010 height .060}
+			   }
+		   ]
+		   }
+		   Transform {
+			   translation -.120 .080 -.205
+			   rotation	1 0 0 -1.5708
+			   children	[
+				   Shape {
+					   appearance Appearance {
+						   material	Material { diffuseColor 0 0 0 }
+
+					   }
+					   geometry	Cylinder {radius .010 height .060}
+				   }
+			   ]
+		   } #end of hands
+		   Transform {
+		   translation 0 .135 -.190
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS car_color }
+				   }
+				   geometry	Box	{ size.240 .005 .030 }
+			   }
+		   ]
+		   }
+		   DEF floor Transform {
+			   translation 0 .0 -.034
+			   children	[
+				   Shape {
+					   appearance Appearance {
+						   material Material { diffuseColor IS car_color transparency .5}
+					   }
+					   geometry	Box	{ size .300 .005 .280}
+				   }
+			   ]
+		   }
+		   Transform {
+		   translation .11275 0 .1405
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS car_color }
+				   }												  
+				   geometry	Box	{size .0745 .005 .069}
+			   }
+		   ]
+		   }
+		   Transform {
+		   translation -.11275 0 .1405
+		   children	[
+			   Shape {
+				   appearance Appearance { 
+					   material	Material { diffuseColor IS car_color }
+				   }
+				   geometry	Box	{ size .0745 .005 .069}
+			   }
+		   ]
+		   }  #bottom_kits_part1
+		   Transform {
+		   translation	.0965 0 .190
+		   children	[
+			   Shape { 
+				   appearance Appearance { 
+					   material	Material { diffuseColor IS car_color }
+				   }
+				   geometry	Box	{ size .032 .005 .030 }
+			   }
+		   ]
+		   }
+		   Transform {
+		   translation -.0965 0 .190 
+		   children	[
+			   Shape {
+				   appearance Appearance { 
+					   material	Material {diffuseColor IS car_color }
+				   }
+				   geometry	Box	{size .032 .005 .030}
+			   }
+		   ]
+		   } #end of bottom_kits_part2
+		   Transform {
+		   translation .12085786437626  0 .17585786437625 
+		   rotation	0 1 0 .7854
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS car_color }
+				   }
+				   geometry	Box	{ size .042 .005 .040 }
+			   }
+		   ]
+		   }
+		   Transform {
+		   translation -.12085786437626  0 .17585786437625 
+		   rotation	0 1 0 .7854
+		   children	[
+			   Shape {
+				   appearance Appearance {
+					   material	Material { diffuseColor IS car_color }
+				   }
+				   geometry	Box	{ size .042 .005 .040 }
+			   }
+		   ]
+		   }
+		   #rear wheel
+		   DEF rear_wheel Transform {
+		   translation 0 -.0075 .2003
+		   rotation	0 0 1 1.5708
+		   children	[
+			   Shape {
+				   appearance Appearance { 
+					   material	Material { diffuseColor IS wheel_color }
+				   }
+				   geometry	Cylinder {radius .0325 height .030}
+			   }
+		   ]
+	   }		 
+	   Transform{
+	   translation 0 -.0075 .2003
+	   rotation	0 0 1 1.5708
+	   children	[
+		   Shape {
+			   appearance Appearance {
+				   material	Material { diffuseColor IS wheel_shaft_color }
+			   }
+			   geometry	Cylinder { radius .010 height .032}
+		   }
+	   ]
+	   }
+
+	   Transform {
+	   translation	   0   .02539726442234	.17519643864943
+	   rotation	   1.0 0.0 0.0 2.475
+	   children	[
+		   Shape {
+			   appearance Appearance {
+				   material	Material { diffuseColor .9 .5 .1}
+			   }
+			   geometry	Cylinder {radius .005 height .01680465313488}
+		   }
+	   ]
+	   }
+	   #laptop 
+	   DEF laptop Transform {
+	   translation	0 .243 .040
+	   children	[
+		   Shape {
+			   appearance Appearance {
+				   material	Material { diffuseColor 1 .6 .6 }
+			   }
+			   geometry	Box	{size .3 .020 .2}
+		   }
+	   ]
+	   }
+	   ] 
+		   } 
+	 }
+	 DEF robot Transform {
+		 children [
+			 Car {}
+		 ]
+	 }

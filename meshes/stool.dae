@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.70.0 commit date:2014-04-10, commit time:11:49, hash:f93bc76</authoring_tool>
+    </contributor>
+    <created>2014-05-27T21:42:45</created>
+    <modified>2014-05-27T21:42:45</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Camera-camera" name="Camera">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">49.13434</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">100</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <YF_dofdist>0</YF_dofdist>
+          <shiftx>0</shiftx>
+          <shifty>0</shifty>
+        </technique>
+      </extra>
+    </camera>
+  </library_cameras>
+  <library_lights>
+    <light id="Lamp-light" name="Lamp">
+      <technique_common>
+        <point>
+          <color sid="color">1 1 1</color>
+          <constant_attenuation>1</constant_attenuation>
+          <linear_attenuation>0</linear_attenuation>
+          <quadratic_attenuation>0.00111109</quadratic_attenuation>
+        </point>
+      </technique_common>
+      <extra>
+        <technique profile="blender">
+          <adapt_thresh>0.000999987</adapt_thresh>
+          <area_shape>1</area_shape>
+          <area_size>0.1</area_size>
+          <area_sizey>0.1</area_sizey>
+          <area_sizez>1</area_sizez>
+          <atm_distance_factor>1</atm_distance_factor>
+          <atm_extinction_factor>1</atm_extinction_factor>
+          <atm_turbidity>2</atm_turbidity>
+          <att1>0</att1>
+          <att2>1</att2>
+          <backscattered_light>1</backscattered_light>
+          <bias>1</bias>
+          <blue>1</blue>
+          <buffers>1</buffers>
+          <bufflag>0</bufflag>
+          <bufsize>2880</bufsize>
+          <buftype>2</buftype>
+          <clipend>30.002</clipend>
+          <clipsta>1.000799</clipsta>
+          <compressthresh>0.04999995</compressthresh>
+          <dist sid="blender_dist">29.99998</dist>
+          <energy sid="blender_energy">1</energy>
+          <falloff_type>2</falloff_type>
+          <filtertype>0</filtertype>
+          <flag>0</flag>
+          <gamma sid="blender_gamma">1</gamma>
+          <green>1</green>
+          <halo_intensity sid="blnder_halo_intensity">1</halo_intensity>
+          <horizon_brightness>1</horizon_brightness>
+          <mode>8192</mode>
+          <ray_samp>1</ray_samp>
+          <ray_samp_method>1</ray_samp_method>
+          <ray_samp_type>0</ray_samp_type>
+          <ray_sampy>1</ray_sampy>
+          <ray_sampz>1</ray_sampz>
+          <red>1</red>
+          <samp>3</samp>
+          <shadhalostep>0</shadhalostep>
+          <shadow_b sid="blender_shadow_b">0</shadow_b>
+          <shadow_g sid="blender_shadow_g">0</shadow_g>
+          <shadow_r sid="blender_shadow_r">0</shadow_r>
+          <sky_colorspace>0</sky_colorspace>
+          <sky_exposure>1</sky_exposure>
+          <skyblendfac>1</skyblendfac>
+          <skyblendtype>1</skyblendtype>
+          <soft>3</soft>
+          <spotblend>0.15</spotblend>
+          <spotsize>75</spotsize>
+          <spread>1</spread>
+          <sun_brightness>1</sun_brightness>
+          <sun_effect_type>0</sun_effect_type>
+          <sun_intensity>1</sun_intensity>
+          <sun_size>1</sun_size>
+          <type>0</type>
+        </technique>
+      </extra>
+    </light>
+  </library_lights>
+  <library_images/>
+  <library_effects>
+    <effect id="Shape-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.1 0.1 0.1 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.16 0.16 0.16 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.014055 0.014055 0.014055 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">31</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Shape_001-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.1 0.1 0.1 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.63688 0.6588 0.74984 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.014055 0.014055 0.014055 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">31</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Shape_002-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.1 0.1 0.1 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.16 0.16 0.16 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.014055 0.014055 0.014055 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">31</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Shape-material" name="Shape">
+      <instance_effect url="#Shape-effect"/>
+    </material>
+    <material id="Shape_001-material" name="Shape_001">
+      <instance_effect url="#Shape_001-effect"/>
+    </material>
+    <material id="Shape_002-material" name="Shape_002">
+      <instance_effect url="#Shape_002-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="ShapeIndexedFaceSet_001-mesh" name="ShapeIndexedFaceSet.001">
+      <mesh>
+        <source id="ShapeIndexedFaceSet_001-mesh-positions">
+          <float_array id="ShapeIndexedFaceSet_001-mesh-positions-array" count="177">0 0 0 0 -0.002999961 -0.01499998 0 -0.002999961 -0.0345 0.002999961 -0.002999961 -0.01499998 0.002999961 -0.002999961 -0.0345 0.02899998 -0.002999961 -0.01499998 0.002999961 -0.002999961 -0.01199996 0.02899998 -0.002999961 -0.01199996 0.002999961 -0.002999961 0 0 -0.002999961 -0.01199996 0 -0.002999961 0 0.002999961 -0.01899999 -0.0345 0 -0.01899999 -0.0345 0.002999961 -0.01899999 -0.01499998 0 -0.01899999 -0.01499998 0.02899998 -0.01899999 -0.01199996 0.02899998 -0.01899999 -0.01499998 0.002999961 -0.01899999 -0.01199996 0 -0.01899999 0 0.002999961 -0.01899999 0 0 -0.01899999 -0.01199996 0.002999961 -0.002999961 -0.03749996 0.02899998 -0.002999961 -0.03749996 0.02899998 -0.002999961 -0.0345 0.02899998 -0.02199995 -0.01499998 0.002999961 -0.02199995 -0.01499998 0.02899998 -0.02199995 -0.01199996 0.002999961 -0.02199995 -0.01199996 0.02899998 -0.01899999 -0.0345 0.02899998 -0.02199995 -0.03749996 0.02899998 -0.02199995 0 0.02899998 -0.01899999 0 0.032 -0.002999961 -0.01499998 0.032 -0.002999961 -0.0345 0.032 -0.002999961 -0.01199996 0.032 -0.002999961 0 0.02899998 -0.002999961 0 0.002999961 0 -0.01499998 0.002999961 0 -0.0345 0.002999961 0 -0.01199996 0.002999961 0 0 0.02899998 0 -0.0345 0.02899998 0 -0.01499998 0.02899998 0 0 0.02899998 0 -0.01199996 0.032 -0.01899999 -0.0345 0.032 0 0 0 0 -0.03749996 0.032 0 -0.03749996 0 0 0 0 -0.02199995 -0.03749996 0 -0.02199995 0 0.002999961 -0.02199995 -0.03749996 0.032 -0.02199995 -0.03749996 0.032 -0.01899999 -0.01199996 0.032 -0.01899999 0 0.032 -0.02199995 0 0.032 -0.01899999 -0.01499998 0.002999961 -0.02199995 0</float_array>
+          <technique_common>
+            <accessor source="#ShapeIndexedFaceSet_001-mesh-positions-array" count="59" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ShapeIndexedFaceSet_001-mesh-normals">
+          <float_array id="ShapeIndexedFaceSet_001-mesh-normals-array" count="384">0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 0 -1 0 0 -1 0 0 1 0 0 1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 1 0 0 1 0 0 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#ShapeIndexedFaceSet_001-mesh-normals-array" count="128" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ShapeIndexedFaceSet_001-mesh-vertices">
+          <input semantic="POSITION" source="#ShapeIndexedFaceSet_001-mesh-positions"/>
+        </vertices>
+        <polylist material="Shape-material" count="128">
+          <input semantic="VERTEX" source="#ShapeIndexedFaceSet_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ShapeIndexedFaceSet_001-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>1 0 2 0 3 0 3 1 2 1 4 1 3 2 5 2 6 2 6 3 5 3 7 3 6 4 8 4 9 4 9 5 8 5 10 5 11 6 12 6 13 6 13 7 12 7 14 7 15 8 16 8 17 8 17 9 16 9 13 9 18 10 19 10 20 10 20 11 19 11 17 11 21 12 22 12 4 12 4 13 22 13 23 13 16 14 24 14 13 14 13 15 24 15 25 15 26 16 15 16 27 16 27 17 15 17 17 17 23 18 22 18 28 18 28 19 22 19 29 19 28 20 29 20 16 20 16 21 29 21 24 21 7 22 5 22 15 22 15 23 5 23 16 23 30 24 31 24 26 24 26 25 31 25 15 25 5 26 23 26 32 26 32 27 23 27 33 27 34 28 35 28 7 28 7 29 35 29 36 29 3 30 4 30 37 30 37 31 4 31 38 31 39 32 40 32 6 32 6 33 40 33 8 33 41 34 23 34 42 34 42 35 23 35 5 35 36 36 43 36 7 36 7 37 43 37 44 37 38 38 4 38 41 38 41 39 4 39 23 39 45 40 33 40 28 40 28 41 33 41 23 41 44 42 43 42 46 42 37 43 38 43 47 43 47 44 38 44 48 44 48 45 38 45 41 45 48 46 41 46 42 46 49 47 40 47 39 47 46 48 48 48 44 48 44 49 48 49 42 49 44 50 42 50 39 50 39 51 42 51 37 51 39 52 37 52 49 52 49 53 37 53 47 53 9 54 10 54 49 54 14 55 12 55 50 55 51 56 18 56 20 56 50 57 12 57 47 57 47 58 12 58 2 58 47 59 2 59 1 59 49 60 47 60 9 60 9 61 47 61 1 61 9 62 1 62 20 62 20 63 1 63 14 63 20 64 14 64 51 64 51 65 14 65 50 65 52 66 50 66 21 66 21 67 50 67 47 67 21 68 47 68 22 68 22 69 47 69 48 69 22 70 48 70 29 70 29 71 48 71 53 71 40 72 49 72 8 72 8 73 49 73 10 73 46 74 35 74 48 74 48 75 35 75 34 75 54 76 55 76 56 76 34 77 54 77 57 77 57 78 54 78 56 78 57 79 56 79 45 79 45 80 56 80 53 80 45 81 53 81 33 81 33 82 53 82 48 82 33 83 48 83 32 83 32 84 48 84 34 84 32 85 34 85 57 85 27 86 58 86 51 86 56 87 30 87 53 87 53 88 30 88 26 88 50 89 52 89 25 89 29 90 53 90 24 90 24 91 53 91 26 91 24 92 26 92 25 92 25 93 26 93 27 93 25 94 27 94 50 94 50 95 27 95 51 95 35 96 46 96 36 96 36 97 46 97 43 97 42 98 5 98 37 98 37 99 5 99 3 99 7 100 44 100 6 100 6 101 44 101 39 101 16 102 5 102 57 102 57 103 5 103 32 103 54 104 34 104 15 104 15 105 34 105 7 105 31 106 30 106 55 106 55 107 30 107 56 107 31 108 55 108 15 108 15 109 55 109 54 109 16 110 57 110 28 110 28 111 57 111 45 111 51 112 58 112 18 112 18 113 58 113 19 113 17 114 19 114 27 114 27 115 19 115 58 115 13 116 25 116 11 116 11 117 25 117 52 117 11 118 52 118 4 118 4 119 52 119 21 119 12 120 11 120 2 120 2 121 11 121 4 121 20 122 17 122 9 122 9 123 17 123 6 123 17 124 13 124 6 124 6 125 13 125 3 125 13 126 14 126 3 126 3 127 14 127 1 127</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="ShapeIndexedFaceSet_002-mesh" name="ShapeIndexedFaceSet.002">
+      <mesh>
+        <source id="ShapeIndexedFaceSet_002-mesh-positions">
+          <float_array id="ShapeIndexedFaceSet_002-mesh-positions-array" count="27">0 0 0 0.03374999 -0.02374994 -0.03999996 0.03374999 0.001749992 -0.03999996 0.03374999 -0.02374994 -0.03749996 0.03374999 0.001749992 -0.03749996 -0.001749992 -0.02374994 -0.03999996 -0.001749992 -0.02374994 -0.03749996 -0.001749992 0.001749992 -0.03999996 -0.001749992 0.001749992 -0.03749996</float_array>
+          <technique_common>
+            <accessor source="#ShapeIndexedFaceSet_002-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ShapeIndexedFaceSet_002-mesh-normals">
+          <float_array id="ShapeIndexedFaceSet_002-mesh-normals-array" count="36">1 0 0 1 0 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#ShapeIndexedFaceSet_002-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ShapeIndexedFaceSet_002-mesh-colors">
+          <float_array id="ShapeIndexedFaceSet_002-mesh-colors-array" count="108">0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.7960785 0.8196079 0.9372549 0.7960785 0.8196079 0.9372549 0.7960785 0.8196079 0.9372549</float_array>
+          <technique_common>
+            <accessor source="#ShapeIndexedFaceSet_002-mesh-colors-array" count="36" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ShapeIndexedFaceSet_002-mesh-vertices">
+          <input semantic="POSITION" source="#ShapeIndexedFaceSet_002-mesh-positions"/>
+        </vertices>
+        <polylist material="Shape_001-material" count="12">
+          <input semantic="VERTEX" source="#ShapeIndexedFaceSet_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ShapeIndexedFaceSet_002-mesh-normals" offset="1"/>
+          <input semantic="COLOR" source="#ShapeIndexedFaceSet_002-mesh-colors" offset="2"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>1 0 0 2 0 1 3 0 2 3 1 3 2 1 4 4 1 5 5 2 6 1 2 7 6 2 8 6 3 9 1 3 10 3 3 11 7 4 12 5 4 13 8 4 14 8 5 15 5 5 16 6 5 17 2 6 18 7 6 19 4 6 20 4 7 21 7 7 22 8 7 23 5 8 24 7 8 25 1 8 26 1 9 27 7 9 28 2 9 29 8 10 30 6 10 31 4 10 32 4 11 33 6 11 34 3 11 35</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="ShapeIndexedFaceSet-mesh" name="ShapeIndexedFaceSet">
+      <mesh>
+        <source id="ShapeIndexedFaceSet-mesh-positions">
+          <float_array id="ShapeIndexedFaceSet-mesh-positions-array" count="27">0 0 0 0 -0.02199995 -0.03749996 0 -0.01899999 -0.03749996 0.032 -0.02199995 -0.03749996 0.032 -0.01899999 -0.03749996 0 -0.01899999 -0.0345 0.032 -0.01899999 -0.0345 0 -0.02199995 -0.0345 0.032 -0.02199995 -0.0345</float_array>
+          <technique_common>
+            <accessor source="#ShapeIndexedFaceSet-mesh-positions-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ShapeIndexedFaceSet-mesh-normals">
+          <float_array id="ShapeIndexedFaceSet-mesh-normals-array" count="36">0 0 -1 0 0 -1 0 1 0 0 1 0 0 0 1 0 0 1 0 -1 0 0 -1 0 -1 0 0 -1 0 0 1 0 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#ShapeIndexedFaceSet-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ShapeIndexedFaceSet-mesh-vertices">
+          <input semantic="POSITION" source="#ShapeIndexedFaceSet-mesh-positions"/>
+        </vertices>
+        <polylist material="Shape_002-material" count="12">
+          <input semantic="VERTEX" source="#ShapeIndexedFaceSet-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ShapeIndexedFaceSet-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>1 0 2 0 3 0 3 1 2 1 4 1 2 2 5 2 4 2 4 3 5 3 6 3 5 4 7 4 6 4 6 5 7 5 8 5 7 6 1 6 8 6 8 7 1 7 3 7 7 8 5 8 1 8 1 9 5 9 2 9 6 10 8 10 4 10 4 11 8 11 3 11</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Camera" name="Camera" type="NODE">
+        <matrix sid="transform">0.6858805 -0.3173701 0.6548619 7.481132 0.7276338 0.3124686 -0.6106656 -6.50764 -0.01081678 0.8953432 0.4452454 5.343665 0 0 0 1</matrix>
+        <instance_camera url="#Camera-camera"/>
+      </node>
+      <node id="Lamp" name="Lamp" type="NODE">
+        <matrix sid="transform">-0.2908646 -0.7711008 0.5663932 4.076245 0.9551712 -0.1998834 0.2183912 1.005454 -0.05518906 0.6045247 0.7946723 5.903862 0 0 0 1</matrix>
+        <instance_light url="#Lamp-light"/>
+      </node>
+      <node id="ShapeIndexedFaceSet" name="ShapeIndexedFaceSet" type="NODE">
+        <matrix sid="transform">-9.999999 3.56068e-10 8.74228e-7 0.1592 -8.74228e-7 -0.004072944 -9.999999 -9.023e-4 0 -9.999999 0.004072944 -0.105 0 0 0 1</matrix>
+        <instance_geometry url="#ShapeIndexedFaceSet_001-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Shape-material" target="#Shape-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="ShapeIndexedFaceSet_001" name="ShapeIndexedFaceSet_001" type="NODE">
+        <matrix sid="transform">-9.999999 3.56068e-10 8.74228e-7 0.1592 -8.74228e-7 -0.004072944 -9.999999 -9.023e-4 0 -9.999999 0.004072944 -0.105 0 0 0 1</matrix>
+        <instance_geometry url="#ShapeIndexedFaceSet_002-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Shape_001-material" target="#Shape_001-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="ShapeIndexedFaceSet_002" name="ShapeIndexedFaceSet_002" type="NODE">
+        <matrix sid="transform">-9.999999 3.56068e-10 8.74228e-7 0.1592 -8.74228e-7 -0.004072944 -9.999999 -9.023e-4 0 -9.999999 0.004072944 -0.105 0 0 0 1</matrix>
+        <instance_geometry url="#ShapeIndexedFaceSet-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Shape_002-material" target="#Shape_002-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

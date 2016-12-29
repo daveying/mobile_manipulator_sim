@@ -1,0 +1,441 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name='shenling'>
+    <link name='Wall_0'>
+      <collision name='Wall_0_Collision'>
+        <geometry>
+          <box>
+            <size>23 1 0.001</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_0_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>23 1 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+      <pose>-2 -9 0 0 0 -1.5708</pose>
+    </link>
+    <link name='Wall_2'>
+      <collision name='Wall_2_Collision'>
+        <geometry>
+          <box>
+            <size>31 1 0.001</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_2_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>31 1 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+      <pose>5 -1 0 0 -0 3.14159</pose>
+    </link>
+    <link name='Wall_4'>
+      <collision name='Wall_4_Collision'>
+        <geometry>
+          <box>
+            <size>31 1 0.001</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_4_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>31 1 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+      <pose>5 -5 0 0 -0 3.14159</pose>
+    </link>
+    <link name='Wall_6'>
+      <collision name='Wall_6_Collision'>
+        <geometry>
+          <box>
+            <size>31 1 0.001</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_6_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>31 1 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+      <pose>5 -13 0 0 -0 0</pose>
+    </link>
+    <link name='Wall_7'>
+      <collision name='Wall_7_Collision'>
+        <geometry>
+          <box>
+            <size>7 1 0.001</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_7_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>7 1 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+      <pose>6 -1 0 0 0 -1.5708</pose>
+    </link>
+    <link name='Wall_8'>
+      <collision name='Wall_8_Collision'>
+        <geometry>
+          <box>
+            <size>16 1 0.001</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_8_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>16 1 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+      <pose>10 -13 0 0 0 -1.5708</pose>
+    </link>
+    <link name='Wall_9'>
+      <collision name='Wall_9_Collision'>
+        <geometry>
+          <box>
+            <size>10 1 0.001</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_9_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>10 1 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+      <pose>15 -17 0 0 -0 3.14159</pose>
+    </link>
+    <link name='Wall_10'>
+      <collision name='Wall_10_Collision'>
+        <geometry>
+          <box>
+            <size>8 1 0.001</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_10_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>8 1 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+      <pose>-6 -9 0 0 -0 3.14159</pose>
+    </link>
+    <link name='Wall_11'>
+      <collision name='Wall_11_Collision'>
+        <geometry>
+          <box>
+            <size>8 1 0.001</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_11_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>8 1 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+      <pose>-6 -17 0 0 -0 3.14159</pose>
+    </link>
+    <link name='Wall_12'>
+      <collision name='Wall_12_Collision'>
+        <geometry>
+          <box>
+            <size>4 1 0.001</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_12_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>4 1 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+      <pose>-6 -19 0 0 0 -1.5708</pose>
+    </link>
+    <link name='Wall_13'>
+      <collision name='Wall_13_Collision'>
+        <geometry>
+          <box>
+            <size>10 1 0.001</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_13_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>10 1 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+      <pose>15 -9 0 0 -0 0</pose>
+    </link>
+    <link name='Wall_left'>
+      <collision name='Wall_left_Collision'>
+        <geometry>
+          <box>
+            <size>24 1 0.001</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_left_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>24 1 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+      <pose>-10 -9 0 0 0 -1.5708</pose>
+    </link>
+    <link name='Wall_right'>
+      <collision name='Wall_right_Collision'>
+        <geometry>
+          <box>
+            <size>24 1 0.001</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_right_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>24 1 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+      <pose>20 -9 0 0 0 -1.5708</pose>
+    </link>
+    <link name='Wall_down1'>
+      <collision name='Wall_down1_Collision'>
+        <geometry>
+          <box>
+            <size>5 1 0.001</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_down1_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>5 1 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+      <pose>-4 -21 0 0 -0 0</pose>
+    </link>
+    <link name='Wall_down2'>
+      <collision name='Wall_down2_Collision'>
+        <geometry>
+          <box>
+            <size>11 1 0.001</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_down2_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>11 1 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+      <pose>15 -21 0 0 -0 0</pose>
+    </link>
+    <static>1</static>
+  </model>
+</sdf>

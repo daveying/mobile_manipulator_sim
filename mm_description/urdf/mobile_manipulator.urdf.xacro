@@ -36,8 +36,8 @@
         <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
       </inertial>
 
-      <!--visual>
-        <origin xyz="0.02 -0.03 0" rpy="1.57 0 1.57" />
+      <visual>
+        <origin xyz="0.0 0.0 0" rpy="1.57 0 1.57" />
         <geometry>
           <mesh filename="package://mm_description/meshes/sensors/asus_xtion_pro_live_camera.dae" scale="0.001 0.001 0.001"/>
         </geometry>
@@ -45,17 +45,17 @@
       </visual>
 
       <collision>
-        <origin xyz="0.02 -0.03 0" rpy="1.57 0 1.57" />
+        <origin xyz="0.0 0.0 0" rpy="1.57 0 1.57" />
         <geometry>
            <mesh filename="package://mm_description/meshes/sensors/asus_xtion_pro_live_camera.dae" scale="0.001 0.001 0.001"/>
         </geometry>
-      </collision-->
+      </collision>
   </link>
 
   <joint name="${arm_prefix}base_link_2_xtion1_frame" type="fixed">
 	<parent link="${arm_prefix}base_link"/>
 	<child link="xtion1_frame"/>
-	<origin xyz="-0.3541575 0.1507695 0.779517" rpy="-0.369 0.825 1.119"/>
+	<origin xyz="-0.2741575 0.0807695 0.779517" rpy="-0.369 0.825 1.119"/>
   </joint>
   
   <joint name="xtion1_frame_2_xtion1_optical_frame" type="fixed">

@@ -1,0 +1,2275 @@
+#VRML V2.0 utf8
+
+Transform {
+	scale 0.001 0.001 0.001
+	children [
+DEF Body__22655 Transform { translation 0.000000 0.000000 80.000000
+            rotation 0.000000 0.000000 0.000000 0.000000
+            children [
+ DEF Body__25152 Transform { children [
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    2.926 0 3,  2.926 0 34.001,  2.926 260 34.001,
+    2.926 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    -1 0 0,  -1 0 0,  -1 0 0,
+    -1 0 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    180 0 3,  2.926 0 3,  2.926 260 3,
+    180 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    0 0 -1,  0 0 -1,  0 0 -1,
+    0 0 -1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    174.422 260 16.351,  5.975 260 34.782,  8.208 260 37,
+    2.926 260 3,  176.326 260 9.305,  174.422 260 23.649,
+    180 260 37,  176.326 260 30.695,  2.926 260 34.001,
+    180 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 0, 4, -1, 0, 3, 1, -1,
+   2, 5, 0, -1, 2, 6, 7, -1, 7, 5, 2, -1,
+   3, 8, 1, -1, 4, 9, 3
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    174.422 0 16.351,  174.422 0 23.649,  8.208 0 37,
+    5.975 0 34.782,  176.326 0 30.695,  2.926 0 3,
+    176.326 0 9.305,  180 0 3,  180 0 37,
+    2.926 0 34.001
+   ]
+  }
+  normal Normal {
+   vector [
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0, -1, 2, 1, 4, -1,
+   5, 6, 0, -1, 3, 5, 0, -1, 5, 7, 6, -1,
+   4, 8, 2, -1, 3, 9, 5
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    180 260 37,  8.208 260 37,  8.208 0 37,
+    180 0 37
+   ]
+  }
+  normal Normal {
+   vector [
+    0 0 1,  0 0 1,  0 0 1,
+    0 0 1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    5.975 260 34.782,  5.975 0 34.782,  8.208 0 37,
+    2.926 260 34.001,  2.926 0 34.001,  8.208 260 37
+   ]
+  }
+  normal Normal {
+   vector [
+    -0.494 0 0.87,  -0.494 0 0.87,  -0.866 0 0.5,
+    0.014 0 1,  0.014 0 1,  -0.866 0 0.5
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 1, 0, 3, -1,
+   2, 5, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    176.326 260 9.305,  176.326 0 9.305,  180 0 3,
+    174.422 260 16.351,  174.422 0 16.351,  174.422 260 23.649,
+    174.422 0 23.649,  176.326 260 30.695,  176.326 0 30.695,
+    180 260 37,  180 0 37,  180 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    0.923 0 0.385,  0.923 0 0.385,  0.79 0 0.613,
+    0.991 0 0.132,  0.991 0 0.132,  0.991 0 -0.132,
+    0.991 0 -0.132,  0.923 0 -0.385,  0.923 0 -0.385,
+    0.79 0 -0.613,  0.79 0 -0.613,  0.79 0 0.613
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 4, -1,
+   7, 8, 6, -1, 9, 10, 8, -1, 8, 7, 9, -1,
+   6, 5, 7, -1, 4, 3, 5, -1, 1, 0, 3, -1,
+   2, 11, 0
+   ]
+  }
+ }
+
+] }
+
+] }
+
+ DEF Body__22780 Transform { children [
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    2.926 0 3,  2.926 0 34.001,  2.926 260 34.001,
+    2.926 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    -1 0 0,  -1 0 0,  -1 0 0,
+    -1 0 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    180 0 3,  2.926 0 3,  2.926 260 3,
+    180 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    0 0 -1,  0 0 -1,  0 0 -1,
+    0 0 -1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    174.422 260 16.351,  5.975 260 34.782,  8.208 260 37,
+    2.926 260 3,  176.326 260 9.305,  174.422 260 23.649,
+    180 260 37,  176.326 260 30.695,  2.926 260 34.001,
+    180 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 0, 4, -1, 0, 3, 1, -1,
+   2, 5, 0, -1, 2, 6, 7, -1, 7, 5, 2, -1,
+   3, 8, 1, -1, 4, 9, 3
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    174.422 0 16.351,  174.422 0 23.649,  8.208 0 37,
+    5.975 0 34.782,  176.326 0 30.695,  2.926 0 3,
+    176.326 0 9.305,  180 0 3,  180 0 37,
+    2.926 0 34.001
+   ]
+  }
+  normal Normal {
+   vector [
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0, -1, 2, 1, 4, -1,
+   5, 6, 0, -1, 3, 5, 0, -1, 5, 7, 6, -1,
+   4, 8, 2, -1, 3, 9, 5
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    180 260 37,  8.208 260 37,  8.208 0 37,
+    180 0 37
+   ]
+  }
+  normal Normal {
+   vector [
+    0 0 1,  0 0 1,  0 0 1,
+    0 0 1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    5.975 260 34.782,  5.975 0 34.782,  8.208 0 37,
+    2.926 260 34.001,  2.926 0 34.001,  8.208 260 37
+   ]
+  }
+  normal Normal {
+   vector [
+    -0.494 0 0.87,  -0.494 0 0.87,  -0.866 0 0.5,
+    0.014 0 1,  0.014 0 1,  -0.866 0 0.5
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 1, 0, 3, -1,
+   2, 5, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    176.326 260 9.305,  176.326 0 9.305,  180 0 3,
+    174.422 260 16.351,  174.422 0 16.351,  174.422 260 23.649,
+    174.422 0 23.649,  176.326 260 30.695,  176.326 0 30.695,
+    180 260 37,  180 0 37,  180 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    0.923 0 0.385,  0.923 0 0.385,  0.79 0 0.613,
+    0.991 0 0.132,  0.991 0 0.132,  0.991 0 -0.132,
+    0.991 0 -0.132,  0.923 0 -0.385,  0.923 0 -0.385,
+    0.79 0 -0.613,  0.79 0 -0.613,  0.79 0 0.613
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 4, -1,
+   7, 8, 6, -1, 9, 10, 8, -1, 8, 7, 9, -1,
+   6, 5, 7, -1, 4, 3, 5, -1, 1, 0, 3, -1,
+   2, 11, 0
+   ]
+  }
+ }
+
+] }
+
+ DEF Body__22778 Transform { children [
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.200 0.200 1.000
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    7.594 0 40,  180 0 40,  180 260 40,
+    7.594 260 40
+   ]
+  }
+  normal Normal {
+   vector [
+    0 0 1,  0 0 1,  0 0 1,
+    0 0 1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.200 0.200 1.000
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    5.761 260 38.8,  5.761 0 38.8,  7.594 0 40,
+    7.594 260 40
+   ]
+  }
+  normal Normal {
+   vector [
+    -0.917 0 0.4,  -0.917 0 0.4,  0 0 1,
+    0 0 1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.200 0.200 1.000
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    4.156 260 37.227,  4.156 0 37.227,  5.761 0 38.8,
+    1.908 260 37.21,  1.908 0 37.21,  0.28 260 38.76,
+    0.28 0 38.76,  5.761 260 38.8
+   ]
+  }
+  normal Normal {
+   vector [
+    -0.381 0 0.924,  -0.381 0 0.924,  -0.917 0 0.4,
+    0.368 0 0.93,  0.368 0 0.93,  0.911 0 0.413,
+    0.911 0 0.413,  -0.917 0 0.4
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 4, -1,
+   4, 3, 5, -1, 1, 0, 3, -1, 2, 7, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.200 0.200 1.000
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    -0.531 260 39.66,  -0.531 0 39.66,  0.28 0 38.76,
+    -1.713 260 39.927,  -1.713 0 39.927,  0.28 260 38.76
+   ]
+  }
+  normal Normal {
+   vector [
+    0.505 0 0.863,  0.505 0 0.863,  0.911 0 0.413,
+    -0.086 0 0.996,  -0.086 0 0.996,  0.911 0 0.413
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 1, 0, 3, -1,
+   2, 5, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.200 0.200 1.000
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    -8.251 260 38.219,  -8.251 0 38.219,  -1.713 0 39.927,
+    -13.848 260 34.43,  -13.848 0 34.43,  -17.863 260 28.994,
+    -17.863 0 28.994,  -19.839 260 22.531,  -19.839 0 22.531,
+    -19.55 260 15.779,  -19.55 0 15.779,  -17.028 260 9.509,
+    -17.028 0 9.509,  -12.562 260 4.437,  -12.562 0 4.437,
+    -6.661 260 1.142,  -6.661 0 1.142,  0 260 0,
+    0 0 0,  -1.713 260 39.927
+   ]
+  }
+  normal Normal {
+   vector [
+    -0.413 0 0.911,  -0.413 0 0.911,  -0.086 0 0.996,
+    -0.692 0 0.722,  -0.692 0 0.722,  -0.893 0 0.45,
+    -0.893 0 0.45,  -0.992 0 0.127,  -0.992 0 0.127,
+    -0.977 0 -0.211,  -0.977 0 -0.211,  -0.851 0 -0.525,
+    -0.851 0 -0.525,  -0.628 0 -0.778,  -0.628 0 -0.778,
+    -0.333 0 -0.943,  -0.333 0 -0.943,  0 0 -1,
+    0 0 -1,  -0.086 0 0.996
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 4, -1,
+   7, 8, 6, -1, 9, 10, 8, -1, 11, 12, 10, -1,
+   13, 14, 12, -1, 15, 16, 14, -1, 17, 18, 16, -1,
+   16, 15, 17, -1, 14, 13, 15, -1, 12, 11, 13, -1,
+   10, 9, 11, -1, 8, 7, 9, -1, 6, 5, 7, -1,
+   4, 3, 5, -1, 1, 0, 3, -1, 2, 19, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.200 0.200 1.000
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    180 0 0,  0 0 0,  0 260 0,
+    180 260 0
+   ]
+  }
+  normal Normal {
+   vector [
+    0 0 -1,  0 0 -1,  0 0 -1,
+    0 0 -1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.200 0.200 1.000
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    180 0 3,  180 0 0,  180 260 0,
+    180 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    1 0 0,  1 0 0,  1 0 0,
+    1 0 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.200 0.200 1.000
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    0 0 3,  180 0 3,  180 260 3,
+    0 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    0 0 1,  0 0 1,  0 0 1,
+    0 0 1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.200 0.200 1.000
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    -6.261 260 4.195,  -6.261 0 4.195,  0 0 3,
+    -11.642 260 7.612,  -11.642 0 7.612,  -15.386 260 12.77,
+    -15.386 0 12.77,  -16.967 260 18.945,  -16.967 0 18.945,
+    -16.163 260 25.268,  -16.163 0 25.268,  -13.087 260 30.85,
+    -13.087 0 30.85,  -8.171 260 34.908,  -8.171 0 34.908,
+    -2.106 260 36.869,  -2.106 0 36.869,  0 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    0.368 0 0.93,  0.368 0 0.93,  0 0 1,
+    0.685 0 0.729,  0.685 0 0.729,  0.905 0 0.425,
+    0.905 0 0.425,  0.998 0 0.062,  0.998 0 0.062,
+    0.951 0 -0.31,  0.951 0 -0.31,  0.77 0 -0.638,
+    0.77 0 -0.638,  0.481 0 -0.877,  0.481 0 -0.877,
+    0.124 0 -0.992,  0.124 0 -0.992,  0 0 1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 4, -1,
+   7, 8, 6, -1, 9, 10, 8, -1, 11, 12, 10, -1,
+   13, 14, 12, -1, 15, 16, 14, -1, 14, 13, 15, -1,
+   12, 11, 13, -1, 10, 9, 11, -1, 8, 7, 9, -1,
+   6, 5, 7, -1, 4, 3, 5, -1, 1, 0, 3, -1,
+   2, 17, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.200 0.200 1.000
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    -12.562 260 4.437,  -11.642 260 7.612,  -6.261 260 4.195,
+    -17.028 260 9.509,  -15.386 260 12.77,  180 260 3,
+    180 260 0,  0 260 0,  -6.661 260 1.142,
+    0 260 3,  -19.55 260 15.779,  -16.967 260 18.945,
+    -19.839 260 22.531,  -16.163 260 25.268,  -17.863 260 28.994,
+    -13.848 260 34.43,  -13.087 260 30.85,  -8.251 260 38.219,
+    -8.171 260 34.908,  3.088 260 34,  0.111 260 34.748,
+    1.908 260 37.21,  -2.106 260 36.869,  0.28 260 38.76,
+    -1.713 260 39.927,  -0.531 260 39.66,  6.045 260 34.823,
+    4.156 260 37.227,  5.761 260 38.8,  8.208 260 37,
+    180 260 40,  180 260 37,  7.594 260 40
+   ]
+  }
+  normal Normal {
+   vector [
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 7, -1,
+   8, 2, 9, -1, 1, 0, 3, -1, 10, 11, 4, -1,
+   12, 13, 11, -1, 14, 15, 16, -1, 15, 17, 18, -1,
+   19, 20, 21, -1, 20, 22, 23, -1, 22, 24, 25, -1,
+   9, 7, 8, -1, 4, 3, 10, -1, 11, 10, 12, -1,
+   18, 16, 15, -1, 26, 27, 28, -1, 27, 26, 19, -1,
+   25, 23, 22, -1, 2, 8, 0, -1, 16, 13, 14, -1,
+   28, 29, 26, -1, 23, 21, 20, -1, 12, 14, 13, -1,
+   17, 24, 22, -1, 21, 27, 19, -1, 30, 31, 29, -1,
+   22, 18, 17, -1, 29, 32, 30, -1, 28, 32, 29, -1,
+   7, 9, 5
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.200 0.200 1.000
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    -2.106 0 36.869,  0.28 0 38.76,  -0.531 0 39.66,
+    0.111 0 34.748,  1.908 0 37.21,  3.088 0 34,
+    4.156 0 37.227,  -13.848 0 34.43,  -13.087 0 30.85,
+    -8.171 0 34.908,  -17.863 0 28.994,  -16.163 0 25.268,
+    -19.55 0 15.779,  -17.028 0 9.509,  -15.386 0 12.77,
+    -12.562 0 4.437,  -11.642 0 7.612,  6.045 0 34.823,
+    8.208 0 37,  5.761 0 38.8,  -8.251 0 38.219,
+    -19.839 0 22.531,  -16.967 0 18.945,  -6.661 0 1.142,
+    -6.261 0 4.195,  0 0 0,  0 0 3,
+    180 0 3,  7.594 0 40,  180 0 0,
+    180 0 40,  -1.713 0 39.927,  180 0 37
+   ]
+  }
+  normal Normal {
+   vector [
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 4, -1,
+   7, 8, 9, -1, 10, 11, 8, -1, 12, 13, 14, -1,
+   13, 15, 16, -1, 1, 0, 3, -1, 4, 3, 5, -1,
+   17, 18, 19, -1, 20, 9, 0, -1, 8, 7, 10, -1,
+   21, 12, 22, -1, 16, 14, 13, -1, 15, 23, 24, -1,
+   23, 25, 26, -1, 27, 26, 25, -1, 5, 17, 6, -1,
+   18, 28, 19, -1, 9, 20, 7, -1, 11, 10, 21, -1,
+   24, 16, 15, -1, 25, 29, 27, -1, 30, 28, 18, -1,
+   19, 6, 17, -1, 22, 11, 21, -1, 26, 24, 23, -1,
+   2, 31, 0, -1, 14, 22, 12, -1, 0, 31, 20, -1,
+   18, 32, 30
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.200 0.200 1.000
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    0.111 260 34.748,  0.111 0 34.748,  -2.106 0 36.869,
+    3.088 260 34,  3.088 0 34,  6.045 260 34.823,
+    6.045 0 34.823,  8.208 260 37,  8.208 0 37,
+    -2.106 260 36.869
+   ]
+  }
+  normal Normal {
+   vector [
+    -0.483 0 -0.875,  -0.483 0 -0.875,  -0.853 0 -0.522,
+    0.013 0 -1,  0.013 0 -1,  0.505 0 -0.863,
+    0.505 0 -0.863,  0.866 0 -0.5,  0.866 0 -0.5,
+    -0.853 0 -0.522
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 4, -1,
+   7, 8, 6, -1, 6, 5, 7, -1, 4, 3, 5, -1,
+   1, 0, 3, -1, 2, 9, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.200 0.200 1.000
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    180 0 37,  8.208 0 37,  8.208 260 37,
+    180 260 37
+   ]
+  }
+  normal Normal {
+   vector [
+    0 0 -1,  0 0 -1,  0 0 -1,
+    0 0 -1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.200 0.200 1.000
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    180 0 40,  180 0 37,  180 260 37,
+    180 260 40
+   ]
+  }
+  normal Normal {
+   vector [
+    1 0 0,  1 0 0,  1 0 0,
+    1 0 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+] }
+
+ DEF Body__24986 Transform { translation -21.358883 15.866846 40.000000
+            rotation 0.000000 0.000000 -1.000000 0.174533
+            children [
+ DEF Body__23842 Transform { children [
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    2.926 0 3,  2.926 0 34.001,  2.926 260 34.001,
+    2.926 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    -1 0 0,  -1 0 0,  -1 0 0,
+    -1 0 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    180 0 3,  2.926 0 3,  2.926 260 3,
+    180 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    0 0 -1,  0 0 -1,  0 0 -1,
+    0 0 -1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    174.422 260 16.351,  5.975 260 34.782,  8.208 260 37,
+    2.926 260 3,  176.326 260 9.305,  174.422 260 23.649,
+    180 260 37,  176.326 260 30.695,  2.926 260 34.001,
+    180 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 0, 4, -1, 0, 3, 1, -1,
+   2, 5, 0, -1, 2, 6, 7, -1, 7, 5, 2, -1,
+   3, 8, 1, -1, 4, 9, 3
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    174.422 0 16.351,  174.422 0 23.649,  8.208 0 37,
+    5.975 0 34.782,  176.326 0 30.695,  2.926 0 3,
+    176.326 0 9.305,  180 0 3,  180 0 37,
+    2.926 0 34.001
+   ]
+  }
+  normal Normal {
+   vector [
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0, -1, 2, 1, 4, -1,
+   5, 6, 0, -1, 3, 5, 0, -1, 5, 7, 6, -1,
+   4, 8, 2, -1, 3, 9, 5
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    180 260 37,  8.208 260 37,  8.208 0 37,
+    180 0 37
+   ]
+  }
+  normal Normal {
+   vector [
+    0 0 1,  0 0 1,  0 0 1,
+    0 0 1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    5.975 260 34.782,  5.975 0 34.782,  8.208 0 37,
+    2.926 260 34.001,  2.926 0 34.001,  8.208 260 37
+   ]
+  }
+  normal Normal {
+   vector [
+    -0.494 0 0.87,  -0.494 0 0.87,  -0.866 0 0.5,
+    0.014 0 1,  0.014 0 1,  -0.866 0 0.5
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 1, 0, 3, -1,
+   2, 5, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.600 0.600 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    176.326 260 9.305,  176.326 0 9.305,  180 0 3,
+    174.422 260 16.351,  174.422 0 16.351,  174.422 260 23.649,
+    174.422 0 23.649,  176.326 260 30.695,  176.326 0 30.695,
+    180 260 37,  180 0 37,  180 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    0.923 0 0.385,  0.923 0 0.385,  0.79 0 0.613,
+    0.991 0 0.132,  0.991 0 0.132,  0.991 0 -0.132,
+    0.991 0 -0.132,  0.923 0 -0.385,  0.923 0 -0.385,
+    0.79 0 -0.613,  0.79 0 -0.613,  0.79 0 0.613
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 4, -1,
+   7, 8, 6, -1, 9, 10, 8, -1, 8, 7, 9, -1,
+   6, 5, 7, -1, 4, 3, 5, -1, 1, 0, 3, -1,
+   2, 11, 0
+   ]
+  }
+ }
+
+] }
+
+] }
+
+ DEF Body__26367 Transform { translation 0.000000 0.000000 80.000000
+            rotation 0.000000 0.000000 0.000000 0.000000
+            children [
+ DEF Body__25151 Transform { children [
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 1.000 0.800 0.200
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    7.594 0 40,  180 0 40,  180 260 40,
+    7.594 260 40
+   ]
+  }
+  normal Normal {
+   vector [
+    0 0 1,  0 0 1,  0 0 1,
+    0 0 1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 1.000 0.800 0.200
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    5.761 260 38.8,  5.761 0 38.8,  7.594 0 40,
+    7.594 260 40
+   ]
+  }
+  normal Normal {
+   vector [
+    -0.917 0 0.4,  -0.917 0 0.4,  0 0 1,
+    0 0 1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 1.000 0.800 0.200
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    4.156 260 37.227,  4.156 0 37.227,  5.761 0 38.8,
+    1.908 260 37.21,  1.908 0 37.21,  0.28 260 38.76,
+    0.28 0 38.76,  5.761 260 38.8
+   ]
+  }
+  normal Normal {
+   vector [
+    -0.381 0 0.924,  -0.381 0 0.924,  -0.917 0 0.4,
+    0.368 0 0.93,  0.368 0 0.93,  0.911 0 0.413,
+    0.911 0 0.413,  -0.917 0 0.4
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 4, -1,
+   4, 3, 5, -1, 1, 0, 3, -1, 2, 7, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 1.000 0.800 0.200
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    -0.531 260 39.66,  -0.531 0 39.66,  0.28 0 38.76,
+    -1.713 260 39.927,  -1.713 0 39.927,  0.28 260 38.76
+   ]
+  }
+  normal Normal {
+   vector [
+    0.505 0 0.863,  0.505 0 0.863,  0.911 0 0.413,
+    -0.086 0 0.996,  -0.086 0 0.996,  0.911 0 0.413
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 1, 0, 3, -1,
+   2, 5, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 1.000 0.800 0.200
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    -8.251 260 38.219,  -8.251 0 38.219,  -1.713 0 39.927,
+    -13.848 260 34.43,  -13.848 0 34.43,  -17.863 260 28.994,
+    -17.863 0 28.994,  -19.839 260 22.531,  -19.839 0 22.531,
+    -19.55 260 15.779,  -19.55 0 15.779,  -17.028 260 9.509,
+    -17.028 0 9.509,  -12.562 260 4.437,  -12.562 0 4.437,
+    -6.661 260 1.142,  -6.661 0 1.142,  0 260 0,
+    0 0 0,  -1.713 260 39.927
+   ]
+  }
+  normal Normal {
+   vector [
+    -0.413 0 0.911,  -0.413 0 0.911,  -0.086 0 0.996,
+    -0.692 0 0.722,  -0.692 0 0.722,  -0.893 0 0.45,
+    -0.893 0 0.45,  -0.992 0 0.127,  -0.992 0 0.127,
+    -0.977 0 -0.211,  -0.977 0 -0.211,  -0.851 0 -0.525,
+    -0.851 0 -0.525,  -0.628 0 -0.778,  -0.628 0 -0.778,
+    -0.333 0 -0.943,  -0.333 0 -0.943,  0 0 -1,
+    0 0 -1,  -0.086 0 0.996
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 4, -1,
+   7, 8, 6, -1, 9, 10, 8, -1, 11, 12, 10, -1,
+   13, 14, 12, -1, 15, 16, 14, -1, 17, 18, 16, -1,
+   16, 15, 17, -1, 14, 13, 15, -1, 12, 11, 13, -1,
+   10, 9, 11, -1, 8, 7, 9, -1, 6, 5, 7, -1,
+   4, 3, 5, -1, 1, 0, 3, -1, 2, 19, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 1.000 0.800 0.200
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    180 0 0,  0 0 0,  0 260 0,
+    180 260 0
+   ]
+  }
+  normal Normal {
+   vector [
+    0 0 -1,  0 0 -1,  0 0 -1,
+    0 0 -1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 1.000 0.800 0.200
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    180 0 3,  180 0 0,  180 260 0,
+    180 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    1 0 0,  1 0 0,  1 0 0,
+    1 0 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 1.000 0.800 0.200
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    0 0 3,  180 0 3,  180 260 3,
+    0 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    0 0 1,  0 0 1,  0 0 1,
+    0 0 1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 1.000 0.800 0.200
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    -6.261 260 4.195,  -6.261 0 4.195,  0 0 3,
+    -11.642 260 7.612,  -11.642 0 7.612,  -15.386 260 12.77,
+    -15.386 0 12.77,  -16.967 260 18.945,  -16.967 0 18.945,
+    -16.163 260 25.268,  -16.163 0 25.268,  -13.087 260 30.85,
+    -13.087 0 30.85,  -8.171 260 34.908,  -8.171 0 34.908,
+    -2.106 260 36.869,  -2.106 0 36.869,  0 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    0.368 0 0.93,  0.368 0 0.93,  0 0 1,
+    0.685 0 0.729,  0.685 0 0.729,  0.905 0 0.425,
+    0.905 0 0.425,  0.998 0 0.062,  0.998 0 0.062,
+    0.951 0 -0.31,  0.951 0 -0.31,  0.77 0 -0.638,
+    0.77 0 -0.638,  0.481 0 -0.877,  0.481 0 -0.877,
+    0.124 0 -0.992,  0.124 0 -0.992,  0 0 1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 4, -1,
+   7, 8, 6, -1, 9, 10, 8, -1, 11, 12, 10, -1,
+   13, 14, 12, -1, 15, 16, 14, -1, 14, 13, 15, -1,
+   12, 11, 13, -1, 10, 9, 11, -1, 8, 7, 9, -1,
+   6, 5, 7, -1, 4, 3, 5, -1, 1, 0, 3, -1,
+   2, 17, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 1.000 0.800 0.200
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    -12.562 260 4.437,  -11.642 260 7.612,  -6.261 260 4.195,
+    -17.028 260 9.509,  -15.386 260 12.77,  180 260 3,
+    180 260 0,  0 260 0,  -6.661 260 1.142,
+    0 260 3,  -19.55 260 15.779,  -16.967 260 18.945,
+    -19.839 260 22.531,  -16.163 260 25.268,  -17.863 260 28.994,
+    -13.848 260 34.43,  -13.087 260 30.85,  -8.251 260 38.219,
+    -8.171 260 34.908,  3.088 260 34,  0.111 260 34.748,
+    1.908 260 37.21,  -2.106 260 36.869,  0.28 260 38.76,
+    -1.713 260 39.927,  -0.531 260 39.66,  6.045 260 34.823,
+    4.156 260 37.227,  5.761 260 38.8,  8.208 260 37,
+    180 260 40,  180 260 37,  7.594 260 40
+   ]
+  }
+  normal Normal {
+   vector [
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 7, -1,
+   8, 2, 9, -1, 1, 0, 3, -1, 10, 11, 4, -1,
+   12, 13, 11, -1, 14, 15, 16, -1, 15, 17, 18, -1,
+   19, 20, 21, -1, 20, 22, 23, -1, 22, 24, 25, -1,
+   9, 7, 8, -1, 4, 3, 10, -1, 11, 10, 12, -1,
+   18, 16, 15, -1, 26, 27, 28, -1, 27, 26, 19, -1,
+   25, 23, 22, -1, 2, 8, 0, -1, 16, 13, 14, -1,
+   28, 29, 26, -1, 23, 21, 20, -1, 12, 14, 13, -1,
+   17, 24, 22, -1, 21, 27, 19, -1, 30, 31, 29, -1,
+   22, 18, 17, -1, 29, 32, 30, -1, 28, 32, 29, -1,
+   7, 9, 5
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 1.000 0.800 0.200
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    -2.106 0 36.869,  0.28 0 38.76,  -0.531 0 39.66,
+    0.111 0 34.748,  1.908 0 37.21,  3.088 0 34,
+    4.156 0 37.227,  -13.848 0 34.43,  -13.087 0 30.85,
+    -8.171 0 34.908,  -17.863 0 28.994,  -16.163 0 25.268,
+    -19.55 0 15.779,  -17.028 0 9.509,  -15.386 0 12.77,
+    -12.562 0 4.437,  -11.642 0 7.612,  6.045 0 34.823,
+    8.208 0 37,  5.761 0 38.8,  -8.251 0 38.219,
+    -19.839 0 22.531,  -16.967 0 18.945,  -6.661 0 1.142,
+    -6.261 0 4.195,  0 0 0,  0 0 3,
+    180 0 3,  7.594 0 40,  180 0 0,
+    180 0 40,  -1.713 0 39.927,  180 0 37
+   ]
+  }
+  normal Normal {
+   vector [
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 4, -1,
+   7, 8, 9, -1, 10, 11, 8, -1, 12, 13, 14, -1,
+   13, 15, 16, -1, 1, 0, 3, -1, 4, 3, 5, -1,
+   17, 18, 19, -1, 20, 9, 0, -1, 8, 7, 10, -1,
+   21, 12, 22, -1, 16, 14, 13, -1, 15, 23, 24, -1,
+   23, 25, 26, -1, 27, 26, 25, -1, 5, 17, 6, -1,
+   18, 28, 19, -1, 9, 20, 7, -1, 11, 10, 21, -1,
+   24, 16, 15, -1, 25, 29, 27, -1, 30, 28, 18, -1,
+   19, 6, 17, -1, 22, 11, 21, -1, 26, 24, 23, -1,
+   2, 31, 0, -1, 14, 22, 12, -1, 0, 31, 20, -1,
+   18, 32, 30
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 1.000 0.800 0.200
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    0.111 260 34.748,  0.111 0 34.748,  -2.106 0 36.869,
+    3.088 260 34,  3.088 0 34,  6.045 260 34.823,
+    6.045 0 34.823,  8.208 260 37,  8.208 0 37,
+    -2.106 260 36.869
+   ]
+  }
+  normal Normal {
+   vector [
+    -0.483 0 -0.875,  -0.483 0 -0.875,  -0.853 0 -0.522,
+    0.013 0 -1,  0.013 0 -1,  0.505 0 -0.863,
+    0.505 0 -0.863,  0.866 0 -0.5,  0.866 0 -0.5,
+    -0.853 0 -0.522
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 4, -1,
+   7, 8, 6, -1, 6, 5, 7, -1, 4, 3, 5, -1,
+   1, 0, 3, -1, 2, 9, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 1.000 0.800 0.200
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    180 0 37,  8.208 0 37,  8.208 260 37,
+    180 260 37
+   ]
+  }
+  normal Normal {
+   vector [
+    0 0 -1,  0 0 -1,  0 0 -1,
+    0 0 -1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 1.000 0.800 0.200
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    180 0 40,  180 0 37,  180 260 37,
+    180 260 40
+   ]
+  }
+  normal Normal {
+   vector [
+    1 0 0,  1 0 0,  1 0 0,
+    1 0 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+] }
+
+] }
+
+ DEF Body__24921 Transform { translation -21.358883 15.866846 40.000000
+            rotation 0.000000 0.000000 -1.000000 0.174533
+            children [
+ DEF Body__23841 Transform { children [
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.000 0.800 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    7.594 0 40,  180 0 40,  180 260 40,
+    7.594 260 40
+   ]
+  }
+  normal Normal {
+   vector [
+    0 0 1,  0 0 1,  0 0 1,
+    0 0 1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.000 0.800 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    5.761 260 38.8,  5.761 0 38.8,  7.594 0 40,
+    7.594 260 40
+   ]
+  }
+  normal Normal {
+   vector [
+    -0.917 0 0.4,  -0.917 0 0.4,  0 0 1,
+    0 0 1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.000 0.800 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    4.156 260 37.227,  4.156 0 37.227,  5.761 0 38.8,
+    1.908 260 37.21,  1.908 0 37.21,  0.28 260 38.76,
+    0.28 0 38.76,  5.761 260 38.8
+   ]
+  }
+  normal Normal {
+   vector [
+    -0.381 0 0.924,  -0.381 0 0.924,  -0.917 0 0.4,
+    0.368 0 0.93,  0.368 0 0.93,  0.911 0 0.413,
+    0.911 0 0.413,  -0.917 0 0.4
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 4, -1,
+   4, 3, 5, -1, 1, 0, 3, -1, 2, 7, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.000 0.800 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    -0.531 260 39.66,  -0.531 0 39.66,  0.28 0 38.76,
+    -1.713 260 39.927,  -1.713 0 39.927,  0.28 260 38.76
+   ]
+  }
+  normal Normal {
+   vector [
+    0.505 0 0.863,  0.505 0 0.863,  0.911 0 0.413,
+    -0.086 0 0.996,  -0.086 0 0.996,  0.911 0 0.413
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 1, 0, 3, -1,
+   2, 5, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.000 0.800 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    -8.251 260 38.219,  -8.251 0 38.219,  -1.713 0 39.927,
+    -13.848 260 34.43,  -13.848 0 34.43,  -17.863 260 28.994,
+    -17.863 0 28.994,  -19.839 260 22.531,  -19.839 0 22.531,
+    -19.55 260 15.779,  -19.55 0 15.779,  -17.028 260 9.509,
+    -17.028 0 9.509,  -12.562 260 4.437,  -12.562 0 4.437,
+    -6.661 260 1.142,  -6.661 0 1.142,  0 260 0,
+    0 0 0,  -1.713 260 39.927
+   ]
+  }
+  normal Normal {
+   vector [
+    -0.413 0 0.911,  -0.413 0 0.911,  -0.086 0 0.996,
+    -0.692 0 0.722,  -0.692 0 0.722,  -0.893 0 0.45,
+    -0.893 0 0.45,  -0.992 0 0.127,  -0.992 0 0.127,
+    -0.977 0 -0.211,  -0.977 0 -0.211,  -0.851 0 -0.525,
+    -0.851 0 -0.525,  -0.628 0 -0.778,  -0.628 0 -0.778,
+    -0.333 0 -0.943,  -0.333 0 -0.943,  0 0 -1,
+    0 0 -1,  -0.086 0 0.996
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 4, -1,
+   7, 8, 6, -1, 9, 10, 8, -1, 11, 12, 10, -1,
+   13, 14, 12, -1, 15, 16, 14, -1, 17, 18, 16, -1,
+   16, 15, 17, -1, 14, 13, 15, -1, 12, 11, 13, -1,
+   10, 9, 11, -1, 8, 7, 9, -1, 6, 5, 7, -1,
+   4, 3, 5, -1, 1, 0, 3, -1, 2, 19, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.000 0.800 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    180 0 0,  0 0 0,  0 260 0,
+    180 260 0
+   ]
+  }
+  normal Normal {
+   vector [
+    0 0 -1,  0 0 -1,  0 0 -1,
+    0 0 -1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.000 0.800 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    180 0 3,  180 0 0,  180 260 0,
+    180 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    1 0 0,  1 0 0,  1 0 0,
+    1 0 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.000 0.800 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    0 0 3,  180 0 3,  180 260 3,
+    0 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    0 0 1,  0 0 1,  0 0 1,
+    0 0 1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.000 0.800 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    -6.261 260 4.195,  -6.261 0 4.195,  0 0 3,
+    -11.642 260 7.612,  -11.642 0 7.612,  -15.386 260 12.77,
+    -15.386 0 12.77,  -16.967 260 18.945,  -16.967 0 18.945,
+    -16.163 260 25.268,  -16.163 0 25.268,  -13.087 260 30.85,
+    -13.087 0 30.85,  -8.171 260 34.908,  -8.171 0 34.908,
+    -2.106 260 36.869,  -2.106 0 36.869,  0 260 3
+   ]
+  }
+  normal Normal {
+   vector [
+    0.368 0 0.93,  0.368 0 0.93,  0 0 1,
+    0.685 0 0.729,  0.685 0 0.729,  0.905 0 0.425,
+    0.905 0 0.425,  0.998 0 0.062,  0.998 0 0.062,
+    0.951 0 -0.31,  0.951 0 -0.31,  0.77 0 -0.638,
+    0.77 0 -0.638,  0.481 0 -0.877,  0.481 0 -0.877,
+    0.124 0 -0.992,  0.124 0 -0.992,  0 0 1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 4, -1,
+   7, 8, 6, -1, 9, 10, 8, -1, 11, 12, 10, -1,
+   13, 14, 12, -1, 15, 16, 14, -1, 14, 13, 15, -1,
+   12, 11, 13, -1, 10, 9, 11, -1, 8, 7, 9, -1,
+   6, 5, 7, -1, 4, 3, 5, -1, 1, 0, 3, -1,
+   2, 17, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.000 0.800 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    -12.562 260 4.437,  -11.642 260 7.612,  -6.261 260 4.195,
+    -17.028 260 9.509,  -15.386 260 12.77,  180 260 3,
+    180 260 0,  0 260 0,  -6.661 260 1.142,
+    0 260 3,  -19.55 260 15.779,  -16.967 260 18.945,
+    -19.839 260 22.531,  -16.163 260 25.268,  -17.863 260 28.994,
+    -13.848 260 34.43,  -13.087 260 30.85,  -8.251 260 38.219,
+    -8.171 260 34.908,  3.088 260 34,  0.111 260 34.748,
+    1.908 260 37.21,  -2.106 260 36.869,  0.28 260 38.76,
+    -1.713 260 39.927,  -0.531 260 39.66,  6.045 260 34.823,
+    4.156 260 37.227,  5.761 260 38.8,  8.208 260 37,
+    180 260 40,  180 260 37,  7.594 260 40
+   ]
+  }
+  normal Normal {
+   vector [
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0,
+    0 1 0,  0 1 0,  0 1 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 7, -1,
+   8, 2, 9, -1, 1, 0, 3, -1, 10, 11, 4, -1,
+   12, 13, 11, -1, 14, 15, 16, -1, 15, 17, 18, -1,
+   19, 20, 21, -1, 20, 22, 23, -1, 22, 24, 25, -1,
+   9, 7, 8, -1, 4, 3, 10, -1, 11, 10, 12, -1,
+   18, 16, 15, -1, 26, 27, 28, -1, 27, 26, 19, -1,
+   25, 23, 22, -1, 2, 8, 0, -1, 16, 13, 14, -1,
+   28, 29, 26, -1, 23, 21, 20, -1, 12, 14, 13, -1,
+   17, 24, 22, -1, 21, 27, 19, -1, 30, 31, 29, -1,
+   22, 18, 17, -1, 29, 32, 30, -1, 28, 32, 29, -1,
+   7, 9, 5
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.000 0.800 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    -2.106 0 36.869,  0.28 0 38.76,  -0.531 0 39.66,
+    0.111 0 34.748,  1.908 0 37.21,  3.088 0 34,
+    4.156 0 37.227,  -13.848 0 34.43,  -13.087 0 30.85,
+    -8.171 0 34.908,  -17.863 0 28.994,  -16.163 0 25.268,
+    -19.55 0 15.779,  -17.028 0 9.509,  -15.386 0 12.77,
+    -12.562 0 4.437,  -11.642 0 7.612,  6.045 0 34.823,
+    8.208 0 37,  5.761 0 38.8,  -8.251 0 38.219,
+    -19.839 0 22.531,  -16.967 0 18.945,  -6.661 0 1.142,
+    -6.261 0 4.195,  0 0 0,  0 0 3,
+    180 0 3,  7.594 0 40,  180 0 0,
+    180 0 40,  -1.713 0 39.927,  180 0 37
+   ]
+  }
+  normal Normal {
+   vector [
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0,
+    0 -1 0,  0 -1 0,  0 -1 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 4, -1,
+   7, 8, 9, -1, 10, 11, 8, -1, 12, 13, 14, -1,
+   13, 15, 16, -1, 1, 0, 3, -1, 4, 3, 5, -1,
+   17, 18, 19, -1, 20, 9, 0, -1, 8, 7, 10, -1,
+   21, 12, 22, -1, 16, 14, 13, -1, 15, 23, 24, -1,
+   23, 25, 26, -1, 27, 26, 25, -1, 5, 17, 6, -1,
+   18, 28, 19, -1, 9, 20, 7, -1, 11, 10, 21, -1,
+   24, 16, 15, -1, 25, 29, 27, -1, 30, 28, 18, -1,
+   19, 6, 17, -1, 22, 11, 21, -1, 26, 24, 23, -1,
+   2, 31, 0, -1, 14, 22, 12, -1, 0, 31, 20, -1,
+   18, 32, 30
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.000 0.800 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    0.111 260 34.748,  0.111 0 34.748,  -2.106 0 36.869,
+    3.088 260 34,  3.088 0 34,  6.045 260 34.823,
+    6.045 0 34.823,  8.208 260 37,  8.208 0 37,
+    -2.106 260 36.869
+   ]
+  }
+  normal Normal {
+   vector [
+    -0.483 0 -0.875,  -0.483 0 -0.875,  -0.853 0 -0.522,
+    0.013 0 -1,  0.013 0 -1,  0.505 0 -0.863,
+    0.505 0 -0.863,  0.866 0 -0.5,  0.866 0 -0.5,
+    -0.853 0 -0.522
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 3, 4, 1, -1, 5, 6, 4, -1,
+   7, 8, 6, -1, 6, 5, 7, -1, 4, 3, 5, -1,
+   1, 0, 3, -1, 2, 9, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.000 0.800 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    180 0 37,  8.208 0 37,  8.208 260 37,
+    180 260 37
+   ]
+  }
+  normal Normal {
+   vector [
+    0 0 -1,  0 0 -1,  0 0 -1,
+    0 0 -1
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+ Shape {
+  appearance Appearance {
+   material Material {
+    ambientIntensity 0.250
+    diffuseColor 0.000 0.800 0.600
+    specularColor 0.500 0.500 0.500
+    transparency 0.000
+    shininess 0.600
+   }
+  }
+  geometry IndexedFaceSet {
+   creaseAngle 0.1
+   coord Coordinate {
+   point [
+    180 0 40,  180 0 37,  180 260 37,
+    180 260 40
+   ]
+  }
+  normal Normal {
+   vector [
+    1 0 0,  1 0 0,  1 0 0,
+    1 0 0
+   ]
+  }
+  coordIndex [
+   0, 1, 2, -1, 2, 3, 0
+   ]
+  }
+ }
+
+] }
+
+] }
+]}
