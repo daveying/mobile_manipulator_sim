@@ -1,6 +1,8 @@
 <launch>
 
   <!-- these are the arguments you can pass this launch file, for example paused:=true -->
+  <arg name="env_name" default="room100" />
+
   <arg name="paused" default="false"/>
   <arg name="use_sim_time" default="true"/>
   <arg name="gui" default="true"/>
@@ -16,6 +18,12 @@
     <arg name="use_sim_time" value="$(arg use_sim_time)"/>
     <arg name="headless" value="$(arg headless)"/>
   </include>
+  
+  <include file="$(find mm_gazebo)/worlds/$(arg env_name).launch.xml">
+    <arg name="init_pos_x" value="0" />
+    <arg name="init_pos_y" value="0" />
+    <arg name="init_pos_z" value="0" />
+  </include>
 
   <!-- Load the URDF into the ROS Parameter Server -->
   <param name="robot_description"
@@ -23,16 +31,16 @@
 
   <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-	args="-urdf -model mobile_manipulator -param robot_description -x 0.0 -y 0.0 -z 0.0"/>
+	args="-urdf -model mobile_manipulator -param robot_description -x 7.0 -y 6.0 -z 0.0"/>
 	
   <include file="$(find mm_gazebo)/launch/controller_utils.launch"/>
 
-  <!--rosparam file="$(find mm_gazebo)/controller/mobile_base_controller.yaml"/-->
   <rosparam file="$(find mm_gazebo)/controller/arm_controller_ur5.yaml" command="load"/>
   <node name="arm_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn arm_controller" respawn="false" output="screen"/>
   
 
 
+  <!--rosparam file="$(find mm_gazebo)/controller/mobile_base_controller.yaml"/-->
   <!--node name="mobile_base_controller_spawner" pkg="controller_manager" type="controller_manager" respawn="false"
 	output="screen" ns="/mobile_base" args="spawn wheel1_velocity_controller wheel2_velocity_controller wheel3_velocity_controller wheel4_velocity_controller"/-->
 </launch>
