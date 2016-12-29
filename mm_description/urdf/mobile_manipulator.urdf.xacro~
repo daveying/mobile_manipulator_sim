@@ -8,10 +8,10 @@
   <xacro:include filename="$(find mm_description)/urdf/common.gazebo" />
 
   <!-- ur5 -->
-  <xacro:include filename="$(find mm_description)/urdf/ur5.urdf.xacro" />
+  <xacro:include filename="$(find mm_description)/urdf/ur5/ur5.urdf.xacro" />
 
   <!-- mobile base -->
-  <xacro:include filename="$(find mm_description)/urdf/mobile_base.xacro" />
+  <xacro:include filename="$(find mm_description)/urdf/mobile_base/mobile_base.xacro" />
 
   <!-- arm -->
   <xacro:ur5_robot prefix="${arm_prefix}" joint_limited="true"/>
@@ -27,7 +27,7 @@
   -->
   <joint name="base_link_2_${arm_prefix}base_link" type="fixed">
     <parent link="base_link" />
-    <child link="arm_base_link" />
+    <child link="${arm_prefix}base_link" />
     <origin xyz="0.40 0 0.823" rpy="0 0 -1.5708" />
   </joint>
   
