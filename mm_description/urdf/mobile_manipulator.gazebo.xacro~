@@ -36,13 +36,14 @@
           <depthImageTopicName>${name}/depth/image_raw</depthImageTopicName>
           <depthImageCameraInfoTopicName>${name}/depth/camera_info</depthImageCameraInfoTopicName>
           <pointCloudTopicName>${name}/depth/points</pointCloudTopicName>
-          <frameName>${name}_optical_frame</frameName>
+          <!--frameName>${name}_optical_frame</frameName-->
+          <frameName>${name}_frame</frameName>
           <pointCloudCutoff>0.5</pointCloudCutoff>
-          <distortionK1>0.00000001</distortionK1>
-          <distortionK2>0.00000001</distortionK2>
-          <distortionK3>0.00000001</distortionK3>
-          <distortionT1>0.00000001</distortionT1>
-          <distortionT2>0.00000001</distortionT2>
+          <distortionK1>0.0000000</distortionK1>
+          <distortionK2>0.0000000</distortionK2>
+          <distortionK3>0.0000000</distortionK3>
+          <distortionT1>0.0000000</distortionT1>
+          <distortionT2>0.0000000</distortionT2>
           <CxPrime>0</CxPrime>
           <Cx>0</Cx>
           <Cy>0</Cy>
@@ -74,13 +75,14 @@
           <depthImageTopicName>${name}/depth/image_raw</depthImageTopicName>
           <depthImageCameraInfoTopicName>${name}/depth/camera_info</depthImageCameraInfoTopicName>
           <pointCloudTopicName>${name}/rgb/points</pointCloudTopicName>
-          <frameName>${name}_optical_frame</frameName>
+          <!--frameName>${name}_optical_frame</frameName-->
+          <frameName>${name}_frame</frameName>
           <pointCloudCutoff>0.5</pointCloudCutoff>
-          <distortionK1>0.00000001</distortionK1>
-          <distortionK2>0.00000001</distortionK2>
-          <distortionK3>0.00000001</distortionK3>
-          <distortionT1>0.00000001</distortionT1>
-          <distortionT2>0.00000001</distortionT2>
+          <distortionK1>0.0000000</distortionK1>
+          <distortionK2>0.0000000</distortionK2>
+          <distortionK3>0.0000000</distortionK3>
+          <distortionT1>0.0000000</distortionT1>
+          <distortionT2>0.0000000</distortionT2>
           <CxPrime>0</CxPrime>
           <Cx>0</Cx>
           <Cy>0</Cy>
