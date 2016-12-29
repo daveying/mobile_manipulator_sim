@@ -5,4 +5,4 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/mm.srdf
   CONFIG:
-    generated_timestamp: 1482896615
+    generated_timestamp: 1483002967

@@ -17,7 +17,7 @@
   <!-- arm -->
   <xacro:ur5_robot prefix="${arm_prefix}" joint_limited="true"/>
   <xacro:mobile_base />
-
+  
 
   <joint name="base_link_2_${arm_prefix}base_link" type="fixed">
     <parent link="base_link" />
@@ -58,4 +58,5 @@
 	<origin xyz="-0.3541575 0.1507695 0.779517" rpy="-0.369 0.825 1.119"/>
   </joint>
 
+  <xacro:kinect_camera_gazebo_v0 name="xtion1" />
 </robot>
