@@ -9,21 +9,7 @@
         <mu2>0.7</mu2>
         <material>Gazebo/Black</material>
     </gazebo>
-    <gazebo reference="wheel2">
-        <mu1>0.7</mu1>
-        <mu2>0.7</mu2>
-        <material>Gazebo/Black</material>
-    </gazebo>
-    <gazebo reference="wheel3">
-        <mu1>0.7</mu1>
-        <mu2>0.7</mu2>
-        <material>Gazebo/Black</material>
-    </gazebo>
-    <gazebo reference="wheel4">
-        <mu1>0.7</mu1>
-        <mu2>0.7</mu2>
-        <material>Gazebo/Black</material>
-    </gazebo> 
+    
     <gazebo reference="base_hokuyo_link">
       <sensor name="base_hokuyo" type="ray">
 		<always_on>true</always_on>

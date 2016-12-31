@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro"
        name="room100" >
+     
+    <property name="M_PI" value="3.1415926" />  
+     
     <link name="wall">
         <inertial>
           <origin xyz="7.5 6 0" /> 
@@ -50,7 +53,7 @@
     <joint name="wall_2_qr_board2" type="fixed">
         <parent link="wall" />
         <child link="qr_board2" />
-        <origin xyz="14 11.4 1" rpy="0 0 0" />
+        <origin xyz="14.135 11.265 1" rpy="0 0 ${M_PI/2}" />
     </joint>
     
     <link name="qr_board2">
