@@ -19,6 +19,7 @@
   <run_depend>mm_gazebo</run_depend>
   <run_depend>mm_description</run_depend>
   <run_depend>mm_ar_track</run_depend>
+  <run_depend>mm_navigation</run_depend>
 
 
   <export>

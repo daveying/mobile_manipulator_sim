@@ -311,7 +311,33 @@
           </geometry>
         </collision>
     </link> 
-    
+
+    <joint name="wall_2_shelf" type="fixed">
+        <parent link="wall" />
+        <child link="shelf" />
+        <origin xyz="0.2 1.6 0" rpy="${M_PI/2} 0 ${M_PI/2}" />
+    </joint>
+    <!-- line -->
+    <link name="shelf">
+        <inertial>
+          <origin xyz="0 0 0" /> 
+          <mass value="10000000.0" />
+          <inertia  ixx="1000000.0" ixy="0.0"  ixz="0.0"  iyy="1000000.0"  iyz="0.0"  izz="1000000.0" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/shelf.dae" />
+          </geometry>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/shelf.dae" />
+          </geometry>
+        </collision>
+    </link>
+   
     <!-- ############ qr boards ############### -->
     
     <joint name="wall_2_qr_board1" type="fixed">
@@ -367,7 +393,34 @@
           </geometry>
         </collision>
     </link>
+
+    <joint name="wall_2_qr_board3" type="fixed">
+        <parent link="wall" />
+        <child link="qr_board3" />
+        <origin xyz="9.3 10.2 0.7" rpy="0 0 ${M_PI}" />
+    </joint>
     
+    <!-- qr board on desk 3 -->
+    <link name="qr_board3">
+        <inertial>
+          <origin xyz="0 0 0" /> 
+          <mass value="0.01" />
+          <inertia  ixx="0.00001" ixy="0.0"  ixz="0.0"  iyy="0.00001"  iyz="0.0"  izz="0.00001" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/qr_board.dae" />
+          </geometry>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/qr_board.dae" />
+          </geometry>
+        </collision>
+    </link>
+
     <!-- ############ boxes ############### -->    
     <joint name="wall_2_box1" type="fixed">
         <parent link="wall" />
@@ -474,7 +527,7 @@
     <joint name="wall_2_box5" type="fixed">
         <parent link="wall" />
         <child link="box5" />
-        <origin xyz="3 3.5 0.25" rpy="0 0 0" />
+        <origin xyz="4 3 0.25" rpy="0 0 0" />
     </joint>
     
     <link name="box5">
