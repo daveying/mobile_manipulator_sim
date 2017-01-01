@@ -4,6 +4,7 @@
      
     <property name="M_PI" value="3.1415926" />  
      
+    <!-- wall of room 100 -->
     <link name="wall">
         <inertial>
           <origin xyz="7.5 6 0" /> 
@@ -24,12 +25,117 @@
         </collision>
     </link>
     
+    <joint name="wall_2_long_desk1" type="fixed">
+        <parent link="wall" />
+        <child link="long_desk1" />
+        <origin xyz="4 3 0" rpy="0 0 0" />
+    </joint>
+    <!-- long desk 1 -->
+    <link name="long_desk1">
+        <inertial>
+          <origin xyz="0 0 0" /> 
+          <mass value="10000000.0" />
+          <inertia  ixx="1000000.0" ixy="0.0"  ixz="0.0"  iyy="1000000.0"  iyz="0.0"  izz="1000000.0" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/longdesk.dae" />
+          </geometry>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/longdesk.dae" />
+          </geometry>
+        </collision>
+    </link>
+    
+    <joint name="wall_2_long_desk2" type="fixed">
+        <parent link="wall" />
+        <child link="long_desk2" />
+        <origin xyz="4 3.58 0" rpy="0 0 0" />
+    </joint>
+    <!-- long desk 2 -->
+    <link name="long_desk2">
+        <inertial>
+          <origin xyz="0 0 0" /> 
+          <mass value="10000000.0" />
+          <inertia  ixx="1000000.0" ixy="0.0"  ixz="0.0"  iyy="1000000.0"  iyz="0.0"  izz="1000000.0" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/longdesk.dae" />
+          </geometry>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/longdesk.dae" />
+          </geometry>
+        </collision>
+    </link>
+    
+    <joint name="wall_2_aircon1" type="fixed">
+        <parent link="wall" />
+        <child link="aircon1" />
+        <origin xyz="0.4 0.4 0" rpy="${M_PI/2} 0 ${-M_PI/4}" />
+    </joint>
+    <!-- air condition 1 -->
+    <link name="aircon1">
+        <inertial>
+          <origin xyz="0 0 0" /> 
+          <mass value="10000000.0" />
+          <inertia  ixx="1000000.0" ixy="0.0"  ixz="0.0"  iyy="1000000.0"  iyz="0.0"  izz="1000000.0" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/aircon.dae" />
+          </geometry>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/aircon.dae" />
+          </geometry>
+        </collision>
+    </link>
+   
+    <joint name="wall_2_aircon2" type="fixed">
+        <parent link="wall" />
+        <child link="aircon2" />
+        <origin xyz="0.4 11.4 0" rpy="${M_PI/2} 0 ${-3*M_PI/4}" />
+    </joint>
+    <!-- air condition 1 -->
+    <link name="aircon2">
+        <inertial>
+          <origin xyz="0 0 0" /> 
+          <mass value="10000000.0" />
+          <inertia  ixx="1000000.0" ixy="0.0"  ixz="0.0"  iyy="1000000.0"  iyz="0.0"  izz="1000000.0" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/aircon.dae" />
+          </geometry>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/aircon.dae" />
+          </geometry>
+        </collision>
+    </link>
+    
     <joint name="wall_2_qr_board1" type="fixed">
         <parent link="wall" />
         <child link="qr_board1" />
-        <origin xyz="13 1.24 1" rpy="0 0 0" />
+        <origin xyz="13 1.54 1" rpy="0 0 0" />
     </joint>
     
+    <!-- qr board on desk 1 -->
     <link name="qr_board1">
         <inertial>
           <origin xyz="0 0 0" /> 
@@ -56,6 +162,7 @@
         <origin xyz="14.135 11.265 1" rpy="0 0 ${M_PI/2}" />
     </joint>
     
+    <!-- qr board on desk 2 -->
     <link name="qr_board2">
         <inertial>
           <origin xyz="0 0 0" /> 
@@ -75,5 +182,7 @@
           </geometry>
         </collision>
     </link>
+    
+    
        
 </robot>
