@@ -3,7 +3,9 @@
        name="room100" >
      
     <property name="M_PI" value="3.1415926" />  
-     
+    <xacro:include filename="$(find mm_gazebo)/urdf/materials.xacro" />
+    <xacro:include filename="$(find mm_gazebo)/urdf/room100.gazebo.xacro" />
+    <xacro:room100_gazebo />
     <!-- wall of room 100 -->
     <link name="wall">
         <inertial>
@@ -106,7 +108,7 @@
     <joint name="wall_2_aircon2" type="fixed">
         <parent link="wall" />
         <child link="aircon2" />
-        <origin xyz="0.4 11.4 0" rpy="${M_PI/2} 0 ${-3*M_PI/4}" />
+        <origin xyz="0.4 11.7 0" rpy="${M_PI/2} 0 ${-3*M_PI/4}" />
     </joint>
     <!-- air condition 1 -->
     <link name="aircon2">
@@ -128,6 +130,189 @@
           </geometry>
         </collision>
     </link>
+    
+    <joint name="wall_2_workdesk1" type="fixed">
+        <parent link="wall" />
+        <child link="workdesk1" />
+        <origin xyz="2.4 11.6 0" rpy="${M_PI/2} 0 ${M_PI}" />
+    </joint>
+    <!-- work desk 1 -->
+    <link name="workdesk1">
+        <inertial>
+          <origin xyz="0 0 0" /> 
+          <mass value="10000000.0" />
+          <inertia  ixx="1000000.0" ixy="0.0"  ixz="0.0"  iyy="1000000.0"  iyz="0.0"  izz="1000000.0" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/workdesk.dae" />
+          </geometry>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/workdesk.dae" />
+          </geometry>
+        </collision>
+    </link>   
+    <joint name="wall_2_workdesk2" type="fixed">
+        <parent link="wall" />
+        <child link="workdesk2" />
+        <origin xyz="4.4 11.6 0" rpy="${M_PI/2} 0 ${M_PI}" />
+    </joint>
+    <!-- work desk 2 -->
+    <link name="workdesk2">
+        <inertial>
+          <origin xyz="0 0 0" /> 
+          <mass value="10000000.0" />
+          <inertia  ixx="1000000.0" ixy="0.0"  ixz="0.0"  iyy="1000000.0"  iyz="0.0"  izz="1000000.0" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/workdesk.dae" />
+          </geometry>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/workdesk.dae" />
+          </geometry>
+        </collision>
+    </link>   
+    
+    <joint name="wall_2_workdesk3" type="fixed">
+        <parent link="wall" />
+        <child link="workdesk3" />
+        <origin xyz="0.4 8.6 0" rpy="${M_PI/2} 0 ${-M_PI/2}" />
+    </joint>
+    <!-- work desk 3 -->
+    <link name="workdesk3">
+        <inertial>
+          <origin xyz="0 0 0" /> 
+          <mass value="10000000.0" />
+          <inertia  ixx="1000000.0" ixy="0.0"  ixz="0.0"  iyy="1000000.0"  iyz="0.0"  izz="1000000.0" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/workdesk.dae" />
+          </geometry>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/workdesk.dae" />
+          </geometry>
+        </collision>
+    </link> 
+    
+    <joint name="wall_2_storage" type="fixed">
+        <parent link="wall" />
+        <child link="storage" />
+        <origin xyz="6 3.3 0.75" rpy="0 0 ${-M_PI/2}" />
+    </joint>
+    <!-- storage -->
+    <link name="storage">
+        <inertial>
+          <origin xyz="0 0 0" /> 
+          <mass value="10000000.0" />
+          <inertia  ixx="1000000.0" ixy="0.0"  ixz="0.0"  iyy="1000000.0"  iyz="0.0"  izz="1000000.0" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/storage.dae" />
+          </geometry>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/storage.dae" />
+          </geometry>
+        </collision>
+    </link>
+ 
+    <joint name="wall_2_elevbox" type="fixed">
+        <parent link="wall" />
+        <child link="elevbox" />
+        <origin xyz="7.5 11.7 0" rpy="0 0 0" />
+    </joint>
+    <!-- elevator box 1 -->
+    <link name="elevbox">
+        <inertial>
+          <origin xyz="0 0 0" /> 
+          <mass value="10000000.0" />
+          <inertia  ixx="1000000.0" ixy="0.0"  ixz="0.0"  iyy="1000000.0"  iyz="0.0"  izz="1000000.0" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/elevator_box.dae" scale="0.4 0.4 0.4"/>
+          </geometry>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/elevator_box.dae" scale="0.4 0.4 0.4"/>
+          </geometry>
+        </collision>
+    </link>
+ 
+    <joint name="wall_2_desk" type="fixed">
+        <parent link="wall" />
+        <child link="desk" />
+        <origin xyz="9 11 0" rpy="0 0 ${M_PI}" />
+    </joint>
+    <!-- elevator box 1 -->
+    <link name="desk">
+        <inertial>
+          <origin xyz="0 0 0" /> 
+          <mass value="10000000.0" />
+          <inertia  ixx="1000000.0" ixy="0.0"  ixz="0.0"  iyy="1000000.0"  iyz="0.0"  izz="1000000.0" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/desk.stl"/>
+          </geometry>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/desk.stl"/>
+          </geometry>
+        </collision>
+    </link>
+ 
+    <joint name="wall_2_line" type="fixed">
+        <parent link="wall" />
+        <child link="line" />
+        <origin xyz="10 3.6 0" rpy="0 0 ${M_PI/2}" />
+    </joint>
+    <!-- line -->
+    <link name="line">
+        <inertial>
+          <origin xyz="0 0 0" /> 
+          <mass value="10000000.0" />
+          <inertia  ixx="1000000.0" ixy="0.0"  ixz="0.0"  iyy="1000000.0"  iyz="0.0"  izz="1000000.0" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/line.dae" />
+          </geometry>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <mesh filename="package://mm_gazebo/meshes/line.dae" />
+          </geometry>
+        </collision>
+    </link> 
+    
+    <!-- ############ qr boards ############### -->
     
     <joint name="wall_2_qr_board1" type="fixed">
         <parent link="wall" />
@@ -183,6 +368,132 @@
         </collision>
     </link>
     
+    <!-- ############ boxes ############### -->    
+    <joint name="wall_2_box1" type="fixed">
+        <parent link="wall" />
+        <child link="box1" />
+        <origin xyz="12.4 1 0.25" rpy="0 0 0" />
+    </joint>
     
-       
+    <link name="box1">
+        <inertial>
+          <origin xyz="0 0 0" /> 
+          <mass value="100" />
+          <inertia  ixx="1" ixy="0.0"  ixz="0.0"  iyy="1"  iyz="0.0"  izz="1" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <box size="1 1.2 0.5" />
+          </geometry>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <box size="1 1.5 0.5"  />
+          </geometry>
+        </collision>
+    </link>     
+    
+    <joint name="wall_2_box2" type="fixed">
+        <parent link="wall" />
+        <child link="box2" />
+        <origin xyz="10 5 0.25" rpy="0 0 0" />
+    </joint>
+    
+    <link name="box2">
+        <inertial>
+          <origin xyz="0 0 0" /> 
+          <mass value="100" />
+          <inertia  ixx="1" ixy="0.0"  ixz="0.0"  iyy="1"  iyz="0.0"  izz="1" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <box size="0.5 1.2 0.5" />
+          </geometry>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <box size="0.5 1.5 0.5"  />
+          </geometry>
+        </collision>
+    </link>        
+    <joint name="wall_2_box3" type="fixed">
+        <parent link="wall" />
+        <child link="box3" />
+        <origin xyz="9.8 6.5 0.25" rpy="0 0 0" />
+    </joint>
+    
+    <link name="box3">
+        <inertial>
+          <origin xyz="0 0 0" /> 
+          <mass value="100" />
+          <inertia  ixx="1" ixy="0.0"  ixz="0.0"  iyy="1"  iyz="0.0"  izz="1" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <box size="0.5 1.5 0.5" />
+          </geometry>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <box size="0.5 1.5 0.5"  />
+          </geometry>
+        </collision>
+    </link> 
+    
+    <joint name="wall_2_box4" type="fixed">
+        <parent link="wall" />
+        <child link="box4" />
+        <origin xyz="5.5 3.2 0.25" rpy="0 0 0" />
+    </joint>
+    
+    <link name="box4">
+        <inertial>
+          <origin xyz="0 0 0" /> 
+          <mass value="100" />
+          <inertia  ixx="1" ixy="0.0"  ixz="0.0"  iyy="1"  iyz="0.0"  izz="1" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <box size="1 0.8 0.5" />
+          </geometry>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <box size="1 0.8 0.5"  />
+          </geometry>
+        </collision>
+    </link> 
+    <joint name="wall_2_box5" type="fixed">
+        <parent link="wall" />
+        <child link="box5" />
+        <origin xyz="3 3.5 0.25" rpy="0 0 0" />
+    </joint>
+    
+    <link name="box5">
+        <inertial>
+          <origin xyz="0 0 0" /> 
+          <mass value="100" />
+          <inertia  ixx="1" ixy="0.0"  ixz="0.0"  iyy="1"  iyz="0.0"  izz="1" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <box size="1.5 0.6 0.5" />
+          </geometry>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0"/>
+          <geometry>
+            <box size="1.5 0.6 0.5"  />
+          </geometry>
+        </collision>
+    </link>     
 </robot>

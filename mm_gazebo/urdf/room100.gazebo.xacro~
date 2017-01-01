@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+
+  <xacro:macro name="room100_gazebo">
+    <gazebo reference="box1">
+        <material>Gazebo/Orange</material>
+    </gazebo>
+    <gazebo reference="box2">
+        <material>Gazebo/Orange</material>
+    </gazebo>
+    
+    <gazebo reference="box3">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+    
+  </xacro:macro>
+
+</robot>
