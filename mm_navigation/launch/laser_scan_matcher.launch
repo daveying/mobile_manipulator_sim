@@ -1,6 +1,3 @@
-<!--
-Example launch file: launches the scan matcher with pre-recorded data
--->
 
 <launch>
   <arg name="IS_TWISTSTAMPED" default="true" />
