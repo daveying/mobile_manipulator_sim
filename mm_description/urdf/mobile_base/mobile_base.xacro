@@ -23,11 +23,16 @@
         </geometry>
       </visual>
       
-      <inertial>
+      <!--inertial>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <mass value="137.35"/>
         <inertia ixx="12.377" ixy="0.169" ixz="1.173" iyy="17.233" iyz="0.402" izz="13.446"/>
-      </inertial>
+      </inertial--> <!-- reasonable value -->
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="1370.35"/>
+        <inertia ixx="120.377" ixy="1.69" ixz="10.173" iyy="170.233" iyz="4.02" izz="130.446"/>
+      </inertial> <!-- prevent undesired motion when simulation -->
     </link>
     
     <!-- first wheel -->

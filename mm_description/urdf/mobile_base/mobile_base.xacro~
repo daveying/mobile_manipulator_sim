@@ -2,9 +2,9 @@
 <!-- mobile base -->
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <xacro:include filename="$(find mm_description)/urdf/mobile_base.transmission.xacro" />
-  <xacro:include filename="$(find mm_description)/urdf/materials.xacro" />
-  <xacro:include filename="$(find mm_description)/urdf/mobile_base.gazebo.xacro"/>
+  <xacro:include filename="$(find mm_description)/urdf/mobile_base/mobile_base.transmission.xacro" />
+  <xacro:include filename="$(find mm_description)/urdf/mobile_base/materials.xacro" />
+  <xacro:include filename="$(find mm_description)/urdf/mobile_base/mobile_base.gazebo.xacro"/>
 
 
   <xacro:macro name="mobile_base">
