@@ -8,6 +8,7 @@
   <arg name="gui" default="true"/>
   <arg name="headless" default="false"/>
   <arg name="debug" default="false"/>
+  <arg name="vel_control" default="false"/>
 
   <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
@@ -27,7 +28,9 @@
 
   <!-- Load the URDF into the ROS Parameter Server -->
   <param name="robot_description"
-	 command="$(find xacro)/xacro.py '$(find mm_description)/urdf/mobile_manipulator.urdf.xacro'" />
+	 command="$(find xacro)/xacro.py '$(find mm_description)/urdf/mobile_manipulator.urdf.xacro'" unless="$(arg vel_control)"/>
+  <param name="robot_description"
+	 command="$(find xacro)/xacro.py '$(find mm_description)/urdf/mobile_manipulator_vel_control.urdf.xacro'" if="$(arg vel_control)"/>
 
   <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
@@ -35,10 +38,19 @@
 	
   <include file="$(find mm_gazebo)/launch/controller_utils.launch"/>
 
-  <rosparam file="$(find mm_gazebo)/controller/arm_controller_ur5.yaml" command="load"/>
-  <node name="arm_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn arm_controller" respawn="false" output="screen"/>
+  <rosparam file="$(find mm_gazebo)/controller/arm_controller_ur5.yaml" command="load" unless="$(arg vel_control)"/>
+  <node name="arm_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn arm_controller" respawn="false" output="screen" unless="$(arg vel_control)"/>
   
 
+  <rosparam file="$(find mm_gazebo)/controller/arm_vel_controller_ur5.yaml" command="load" if="$(arg vel_control)"/>
+  <node name="arm_vel_controller_spawner" pkg="controller_manager" type="controller_manager" 
+        args="spawn arm_shoulder_pan_joint_vel_controller
+              arm_shoulder_lift_joint_vel_controller
+              arm_elbow_joint_vel_controller
+              arm_wrist_1_joint_vel_controller
+              arm_wrist_2_joint_vel_controller
+              arm_wrist_3_joint_vel_controller" 
+        respawn="false" output="screen" if="$(arg vel_control)"/>
 
   <!--rosparam file="$(find mm_gazebo)/controller/mobile_base_controller.yaml"/-->
   <!--node name="mobile_base_controller_spawner" pkg="controller_manager" type="controller_manager" respawn="false"
