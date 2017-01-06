@@ -10,7 +10,7 @@
       </joint>
       <actuator name="${prefix}shoulder_pan_motor">
         <mechanicalReduction>1</mechanicalReduction>
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <!--hardwareInterface>EffortJointInterface</hardwareInterface-->
       </actuator>
     </transmission>
   
@@ -21,7 +21,7 @@
       </joint>
       <actuator name="${prefix}shoulder_lift_motor">
         <mechanicalReduction>1</mechanicalReduction>
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <!--hardwareInterface>EffortJointInterface</hardwareInterface-->
       </actuator>
     </transmission>
   
@@ -32,7 +32,7 @@
       </joint>
       <actuator name="${prefix}elbow_motor">
         <mechanicalReduction>1</mechanicalReduction>
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <!--hardwareInterface>EffortJointInterface</hardwareInterface-->
       </actuator>
     </transmission>
   
@@ -43,7 +43,7 @@
       </joint>
       <actuator name="${prefix}wrist_1_motor">
         <mechanicalReduction>1</mechanicalReduction>
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <!--hardwareInterface>EffortJointInterface</hardwareInterface-->
       </actuator>
     </transmission>
   
@@ -54,7 +54,7 @@
       </joint>
       <actuator name="${prefix}wrist_2_motor">
         <mechanicalReduction>1</mechanicalReduction>
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <!--hardwareInterface>EffortJointInterface</hardwareInterface-->
       </actuator>
     </transmission>
   
@@ -65,7 +65,7 @@
       </joint>
       <actuator name="${prefix}wrist_3_motor">
         <mechanicalReduction>1</mechanicalReduction>
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <!--hardwareInterface>EffortJointInterface</hardwareInterface-->
       </actuator>
     </transmission>
 

@@ -1,30 +1,30 @@
 arm_shoulder_pan_joint_vel_controller:
   type: velocity_controllers/JointVelocityController
   joint: arm_shoulder_pan_joint
-  pid: {p: 100.0, i: 0.01, d: 10.0}
+  pid: {p: 100000.0, i: 10, d: 10000.0}
 
 arm_shoulder_lift_joint_vel_controller:
   type: velocity_controllers/JointVelocityController
   joint: arm_shoulder_lift_joint
-  pid: {p: 100.0, i: 0.01, d: 10.0}
+  pid: {p: 100000.0, i: 10, d: 10000.0}
 
 arm_elbow_joint_vel_controller:
   type: velocity_controllers/JointVelocityController
   joint: arm_elbow_joint
-  pid: {p: 100.0, i: 0.01, d: 10.0}
+  pid: {p: 100000.0, i: 10, d: 10000.0}
   
 arm_wrist_1_joint_vel_controller:
   type: velocity_controllers/JointVelocityController
   joint: arm_wrist_1_joint
-  pid: {p: 100.0, i: 0.01, d: 10.0}
+  pid: {p: 10000.0, i: 1, d: 1000}
  
 arm_wrist_2_joint_vel_controller:
   type: velocity_controllers/JointVelocityController
   joint: arm_wrist_2_joint
-  pid: {p: 100.0, i: 0.01, d: 10.0}
+  pid: {p: 10000.0, i: 1, d: 1000}
 
 arm_wrist_3_joint_vel_controller:
   type: velocity_controllers/JointVelocityController
   joint: arm_wrist_3_joint
-  pid: {p: 100.0, i: 0.01, d: 10.0}
+  pid: {p: 10000.0, i: 1, d: 1000}
  

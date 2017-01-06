@@ -5,7 +5,7 @@
   <property name="arm_prefix" value="arm_" /> <!-- I need name mobile base as base_link for navigation, so it will conflict with ur base link if prefix is not set. -->
   
   <!-- common stuff -->
-  <xacro:include filename="$(find mm_description)/urdf/mobile_manipulator.gazebo.xacro" />
+  <xacro:include filename="$(find mm_description)/urdf/mobile_manipulator_vel_control.gazebo.xacro" />
 
   <!-- ur5 -->
   <xacro:include filename="$(find mm_description)/urdf/ur5/ur5_vel_control.urdf.xacro" />
