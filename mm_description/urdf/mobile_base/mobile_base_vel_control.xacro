@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+<!-- mobile base -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find mm_description)/urdf/mobile_base/mobile_base.transmission.xacro" />
+  <xacro:include filename="$(find mm_description)/urdf/mobile_base/materials.xacro" />
+  <xacro:include filename="$(find mm_description)/urdf/mobile_base/mobile_base_vel_control.gazebo.xacro"/>
+
+
+  <xacro:macro name="mobile_base">
+    <!-- mobile base -->
+    <link name="base_link">
+      <collision>
+        <origin xyz="0 0 0.08" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://mm_description/meshes/mobile_base/mobile_base_collision.dae" />
+        </geometry>
+      </collision>
+      <visual>
+        <origin xyz="0 0 0.08" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://mm_description/meshes/mobile_base/mobile_base.dae" />
+        </geometry>
+      </visual>
+      
+      <!--inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="137.35"/>
+        <inertia ixx="12.377" ixy="0.169" ixz="1.173" iyy="17.233" iyz="0.402" izz="13.446"/>
+      </inertial--> <!-- reasonable value -->
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="1370.35"/>
+        <inertia ixx="120.377" ixy="1.69" ixz="10.173" iyy="170.233" iyz="4.02" izz="130.446"/>
+      </inertial> <!-- prevent undesired motion when simulation -->
+    </link>
+    
+    <!-- first wheel -->
+    <joint name="base_link_2_wheel1" type="fixed">
+      <parent link="base_link"/>
+      <child link="wheel1"/>
+      <origin xyz="0.35 0.265 0.1" rpy="0 0 0" />
+      <!--axis xyz="0 1 0" />
+      <dynamics damping="0.2" /-->
+    </joint>
+    
+    <link name="wheel1">
+      <collision>
+        <origin xyz="0 -0.04 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://mm_description/meshes/mobile_base/wheel.dae" />
+        </geometry>
+      </collision>
+      
+      <visual>
+        <origin xyz="0 -0.04 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://mm_description/meshes/mobile_base/wheel.dae" />
+        </geometry>
+      </visual>
+      
+      <inertial>
+        <origin xyz="0 -0.04 0" rpy="0 0 0"/>
+        <mass value="3.519"/>
+        <inertia ixx="0.016" ixy="0" ixz="0" iyy="0.017" iyz="0" izz="0.016" />
+      </inertial>
+    </link>
+
+    <!-- second wheel -->
+    <joint name="base_link_2_wheel2" type="fixed">
+      <parent link="base_link"/>
+      <child link="wheel2"/>
+      <origin xyz="-0.35 0.265 0.1" rpy="0 0 0" />
+      <!--axis xyz="0 1 0" />
+      <dynamics damping="0.2" /-->
+    </joint>
+    
+    <link name="wheel2">
+      <collision>
+        <origin xyz="0 -0.04 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://mm_description/meshes/mobile_base/wheel.dae" />
+        </geometry>
+      </collision>
+      
+      <visual>
+        <origin xyz="0 -0.04 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://mm_description/meshes/mobile_base/wheel.dae" />
+        </geometry>
+      </visual>
+      
+      <inertial>
+        <origin xyz="0 -0.04 0" rpy="0 0 0"/>
+        <mass value="3.519"/>
+        <inertia ixx="0.016" ixy="0" ixz="0" iyy="0.017" iyz="0" izz="0.016" />
+      </inertial>
+    </link>
+
+    <!-- third wheel -->
+    <joint name="base_link_2_wheel3" type="fixed">
+      <parent link="base_link"/>
+      <child link="wheel3"/>
+      <origin xyz="-0.35 -0.265 0.1" rpy="0 0 0" />
+      <!--axis xyz="0 1 0" />
+      <dynamics damping="0.2" /-->
+    </joint>
+    
+    <link name="wheel3">
+      <collision>
+        <origin xyz="0 -0.04 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://mm_description/meshes/mobile_base/wheel.dae" />
+        </geometry>
+      </collision>
+      
+      <visual>
+        <origin xyz="0 -0.04 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://mm_description/meshes/mobile_base/wheel.dae" />
+        </geometry>
+      </visual>
+      
+      <inertial>
+        <origin xyz="0 -0.04 0" rpy="0 0 0"/>
+        <mass value="3.519"/>
+        <inertia ixx="0.016" ixy="0" ixz="0" iyy="0.017" iyz="0" izz="0.016" />
+      </inertial>
+    </link>
+
+    <!-- fourth wheel -->
+    <joint name="base_link_2_wheel4" type="fixed">
+      <parent link="base_link"/>
+      <child link="wheel4"/>
+      <origin xyz="0.35 -0.265 0.1" rpy="0 0 0" />
+      <!--axis xyz="0 1 0" />
+      <dynamics damping="0.2" /-->
+    </joint>
+    
+    <link name="wheel4">
+      <collision>
+        <origin xyz="0 -0.04 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://mm_description/meshes/mobile_base/wheel.dae" />
+        </geometry>
+      </collision>
+      
+      <visual>
+        <origin xyz="0 -0.04 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://mm_description/meshes/mobile_base/wheel.dae" />
+        </geometry>
+      </visual>
+
+      <inertial>
+        <origin xyz="0 -0.04 0" rpy="0 0 0"/>
+        <mass value="3.519"/>
+        <inertia ixx="0.016" ixy="0" ixz="0" iyy="0.017" iyz="0" izz="0.016" />
+      </inertial>
+    </link>
+    
+    <xacro:mobile_base_transmission />
+    <xacro:mobile_base_gazebo />
+    
+    <joint name="base_link_2_base_hokuyo_link" type="fixed">
+      <parent link="base_link" />
+      <child link="base_hokuyo_link" />
+      <origin xyz="0.56 0 0.315" rpy="0 0 0" />
+    </joint>
+    
+    <link name="base_hokuyo_link">
+      <collision>
+        <origin xyz="0 0 0.005" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.05 0.05 0.08"/>
+        </geometry>
+      </collision>
+      
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://mm_description/meshes/mobile_base/hokuyo.dae"/>
+        </geometry>
+      </visual>
+      <inertial>
+        <mass value="1e-5" />
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+      </inertial>
+    </link>
+  </xacro:macro>
+  
+</robot>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

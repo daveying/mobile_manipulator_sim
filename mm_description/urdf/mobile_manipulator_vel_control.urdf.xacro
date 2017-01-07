@@ -11,7 +11,7 @@
   <xacro:include filename="$(find mm_description)/urdf/ur5/ur5_vel_control.urdf.xacro" />
 
   <!-- mobile base -->
-  <xacro:include filename="$(find mm_description)/urdf/mobile_base/mobile_base.xacro" />
+  <xacro:include filename="$(find mm_description)/urdf/mobile_base/mobile_base_vel_control.xacro" />
   <!--xacro:include filename="$(find mm_description)/urdf/sensors/asus_xtion_camera.urdf.xacro" /-->
   
   <!-- arm -->

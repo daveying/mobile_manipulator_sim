@@ -1,9 +1,12 @@
 <launch>
   <arg name="sim" default="false" />
   <arg name="debug" default="false" />
+  <arg name="vel_control" default="false" />
     
   <!-- Remap follow_joint_trajectory -->
   <remap if="$(arg sim)" from="/follow_joint_trajectory" to="/arm_controller/follow_joint_trajectory"/>
+  
+  <node if="$(arg vel_control)" pkg="tf" type="static_transform_publisher" name="virtual_joint_broadcaster_0" args="0 0 0 0 0 0 /odom /base_link 100"/>
   
   <!-- Launch moveit -->
   <include file="$(find mm_moveit_config)/launch/move_group.launch">
