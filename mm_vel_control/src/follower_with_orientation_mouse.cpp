@@ -93,7 +93,7 @@ int main(int argc, char** argv)
 	trj.points.push_back(trjp);
 
 	//TODO, Paramters of PID controller
-	double Kp_pose = 0.1, Ki_pose = 0.00, Kp_orien = 0.08, Ki_orien = 0.000;
+	double Kp_pose = 4, Ki_pose = 0.00, Kp_orien = 2.8, Ki_orien = 0.000;
 
 	tf::TransformListener tf_listener;
 	
@@ -249,8 +249,8 @@ void updateDiff(tf::TransformListener &tf_listener, Eigen::Vector3d &diff_vector
 	{
 		try
 		{
-			tf_listener.lookupTransform("odom", "arm_tool0", ros::Time(0), t_w_transform);
-			tf_listener.lookupTransform("odom", "goal", ros::Time(0), g_w_transform);
+			tf_listener.lookupTransform("arm_base_link", "arm_tool0", ros::Time(0), t_w_transform);
+			tf_listener.lookupTransform("arm_base_link", "goal", ros::Time(0), g_w_transform);
 			g_t_transform = t_w_transform.inverse() * g_w_transform;
 			g_t_rotation = g_t_transform.getRotation();
 
