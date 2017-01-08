@@ -93,7 +93,7 @@ int main(int argc, char** argv)
 	trj.points.push_back(trjp);
 
 	//TODO, Paramters of PID controller
-	double Kp_pose = 4, Ki_pose = 0.001/5, Kp_orien = 2.8, Ki_orien = 0.000;
+	double Kp_pose = 0.1, Ki_pose = 0.00, Kp_orien = 0.08, Ki_orien = 0.000;
 
 	tf::TransformListener tf_listener;
 	
