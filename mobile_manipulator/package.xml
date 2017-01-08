@@ -21,6 +21,7 @@
   <run_depend>mm_ar_track</run_depend>
   <run_depend>mm_navigation</run_depend>
   <run_depend>mm_vel_control_test</run_depend>
+  <run_depend>mm_vel_control</run_depend>
 
 
   <export>
