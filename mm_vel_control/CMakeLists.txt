@@ -14,6 +14,9 @@ find_package(catkin REQUIRED COMPONENTS
   trajectory_msgs
   sensor_msgs
   cmake_modules
+  keyboard  
+  moveit_core
+  moveit_ros_planning_interface
 )
 #find_package(catkin REQUIRED cmake_modules)
 find_package(Eigen REQUIRED)
@@ -162,6 +165,45 @@ target_link_libraries(joint_space_move_to
   ${Eigen_INCLUDE_DIRS}
 )
 
+## Declare a C++ executable
+add_executable(follower_goal_broadcaster src/follower_goal_broadcaster.cpp)
+
+## Add cmake target dependencies of the executable
+## same as for the library above
+add_dependencies(follower_goal_broadcaster ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+## Specify libraries to link a library or executable target against
+target_link_libraries(follower_goal_broadcaster
+  ${catkin_LIBRARIES} 
+  ${Eigen_INCLUDE_DIRS}
+)
+
+
+## Declare a C++ executable
+add_executable(follower_with_orientation_mouse src/follower_with_orientation_mouse.cpp)
+
+## Add cmake target dependencies of the executable
+## same as for the library above
+add_dependencies(follower_with_orientation_mouse ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+## Specify libraries to link a library or executable target against
+target_link_libraries(follower_with_orientation_mouse
+  ${catkin_LIBRARIES} 
+  ${Eigen_INCLUDE_DIRS}
+)
+
+## Declare a C++ executable
+add_executable(kinematic_model_test src/kinematic_model_test.cpp)
+
+## Add cmake target dependencies of the executable
+## same as for the library above
+add_dependencies(kinematic_model_test ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+## Specify libraries to link a library or executable target against
+target_link_libraries(kinematic_model_test
+  ${catkin_LIBRARIES} 
+  ${Eigen_INCLUDE_DIRS}
+  )
 #############
 ## Install ##
 #############
