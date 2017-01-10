@@ -1,5 +1,5 @@
 <package>
-  <name>mobile_manipulator</name>
+  <name>mobile_manipulator_sim</name>
   <version>0.0.1</version>
   <description>
       description, simulation and utilities for mobile manipulator.
@@ -9,7 +9,7 @@
 
   <license>BSD</license>
 
-  <url type="website">https://github.com/daveying/mobile_manipulator</url>
+  <url type="website">https://github.com/daveying/mobile_manipulator_sim</url>
 
   <author email="daveying@163.com">Dave Da</author>
 
