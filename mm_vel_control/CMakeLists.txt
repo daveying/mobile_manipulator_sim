@@ -166,28 +166,28 @@ target_link_libraries(joint_space_move_to
 )
 
 ## Declare a C++ executable
-add_executable(follower_goal_broadcaster src/follower_goal_broadcaster.cpp)
+add_executable(goal_broadcaster_sim src/goal_broadcaster_sim.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-add_dependencies(follower_goal_broadcaster ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(goal_broadcaster_sim ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(follower_goal_broadcaster
+target_link_libraries(goal_broadcaster_sim
   ${catkin_LIBRARIES} 
   ${Eigen_INCLUDE_DIRS}
 )
 
 
 ## Declare a C++ executable
-add_executable(follower_with_orientation_mouse src/follower_with_orientation_mouse.cpp)
+add_executable(control_pose_using_mouse_sim src/control_pose_using_mouse_sim.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-add_dependencies(follower_with_orientation_mouse ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(control_pose_using_mouse_sim ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(follower_with_orientation_mouse
+target_link_libraries(control_pose_using_mouse_sim
   ${catkin_LIBRARIES} 
   ${Eigen_INCLUDE_DIRS}
 )
