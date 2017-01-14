@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- ROS Driver, Robot State Publisher, and sensors -->
+    <node pkg="si_utils" type="timed_roslaunch"
+        args="1 robotiq_85_gazebo robotiq_85.launch"
+        name="robotiq_85_gazebo_bringup" output="screen"/>
+        
+        <!-- ########### $(find robotiq_85_gazebo)/launch/robotiq_85.launch -->
+            <launch>
+              <arg name="limited" default="false"/>
+              <arg name="paused" default="false"/>
+              <arg name="gui" default="true"/>
+              
+              <!-- startup simulated world -->
+              <include file="$(find gazebo_ros)/launch/empty_world.launch">
+                <arg name="world_name" default="worlds/empty.world"/>
+                <arg name="paused" value="$(arg paused)"/>
+                <arg name="gui" value="$(arg gui)"/>
+              </include>
+
+              <!-- send robot urdf to param server -->
+              <include file="$(find robotiq_85_description)/launch/upload_robotiq_85_gripper.launch"/>
+              <!-- ########### $(find robotiq_85_description)/launch/upload_robotiq_85_gripper.launch -->
+                <launch>
+                    <param name="robot_description" command="$(find xacro)/xacro.py '$(find robotiq_85_description)/urdf/robotiq_85_gripper.xacro'"/>
+                </launch>
+              <!-- ########### end of $(find robotiq_85_description)/launch/upload_robotiq_85_gripper.launch -->
+              <!-- push robot_description to factory and spawn robot in gazebo -->
+              <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param robot_description -model robot" respawn="false" output="screen" />
+
+              <include file="$(find robotiq_85_gazebo)/launch/controller_utils.launch"/>
+              <rosparam file="$(find robotiq_85_gazebo)/controller/gripper_controller_robotiq.yaml" command="load"/> 
+              <node name="gripper_controller_spawner" pkg="controller_manager" type="spawner" args="gripper --shutdown-timeout 0.5" />
+
+            </launch>
+        <!-- ########### end of $(find robotiq_85_gazebo)/launch/robotiq_85.launch -->
+        
+    <!-- MoveIt! configuration -->
+    <node pkg="si_utils" type="timed_roslaunch"
+        args="8 robotiq_85_moveit_config robotiq_85_moveit_planning_execution.launch sim:=true"
+        name="robotiq_85_moveit_bringup" output="screen"/>
+
+    <!-- Kinematics test -->
+    <node pkg="si_utils" type="timed_roslaunch"
+        args="12 robotiq_85_gazebo test_kinematics.launch"
+        name="robotiq_85_kintest_bringup" output="screen"/>
+
+</launch>

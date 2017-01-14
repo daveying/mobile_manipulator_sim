@@ -1,0 +1,10 @@
+gripper_controller:
+  type: position_controllers/JointPositionController
+  joint: robotiq_85_left_knuckle_joint
+  pid: {p: 100.0, i: 0.01, d: 10.0}
+
+  
+#  joint1_position_controller:
+#    type: effort_controllers/JointPositionController
+#    joint: joint1
+#    pid: {p: 100.0, i: 0.01, d: 10.0}
