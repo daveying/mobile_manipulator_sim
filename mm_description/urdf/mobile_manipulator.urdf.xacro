@@ -28,7 +28,7 @@
   </joint>
   
   <xacro:robotiq_85_gripper prefix="" parent="${arm_prefix}tool0" >
-      <origin xyz="0.0 0 0.0" rpy="0 ${-PI/2} 0"/>
+      <origin xyz="0.0 0 0.005" rpy="0 ${-PI/2} 0"/>
   </xacro:robotiq_85_gripper>
   
   <link name="xtion1_frame">
