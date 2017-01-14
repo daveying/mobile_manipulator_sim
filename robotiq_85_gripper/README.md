@@ -1,5 +1,7 @@
 # robotiq_85_gripper
-[Original repo](https://github.com/StanleyInnovation/robotiq_85_gripper)
+
+Original repo is [here](https://github.com/StanleyInnovation/robotiq_85_gripper).
+
 Common packages for the Robotiq 85 Gripper provided by Stanley Innovation
 
 Defaults to 'ttyUSB0' and 115200 baud rate
