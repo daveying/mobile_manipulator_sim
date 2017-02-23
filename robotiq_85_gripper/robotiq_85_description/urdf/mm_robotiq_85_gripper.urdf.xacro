@@ -2,7 +2,7 @@
 
 
 <robot name="robotiq_85_gripper" xmlns:xacro="http://ros.org/wiki/xacro">
-    <xacro:include filename="$(find robotiq_85_description)/urdf/mm_robotiq_85_gripper.transmission.xacro" />
+    <!--xacro:include filename="$(find robotiq_85_description)/urdf/mm_robotiq_85_gripper.transmission.xacro" /-->
     <property name="pi" value="3.14159"/>
     
     
@@ -34,7 +34,7 @@
             </inertial>
         </link>
 
-        <joint name="${prefix}robotiq_85_left_knuckle_joint" type="revolute">
+        <joint name="${prefix}robotiq_85_left_knuckle_joint" type="fixed"> <!-- revolute -->
             <parent link="${prefix}robotiq_85_base_link"/>
             <child link="${prefix}robotiq_85_left_knuckle_link"/>
             <axis xyz="0 0 1"/>
@@ -42,7 +42,7 @@
             <limit lower="0.0" upper="0.804" velocity="2.0" effort="1000"/>
         </joint>
 
-        <joint name="${prefix}robotiq_85_right_knuckle_joint" type="continuous">
+        <joint name="${prefix}robotiq_85_right_knuckle_joint" type="fixed"> <!--continuous-->
             <parent link="${prefix}robotiq_85_base_link"/>
             <child link="${prefix}robotiq_85_right_knuckle_link"/>
             <axis xyz="0 0 1"/>
@@ -143,7 +143,7 @@
             </inertial>
         </link> 
 
-        <joint name="${prefix}robotiq_85_left_inner_knuckle_joint" type="continuous">
+        <joint name="${prefix}robotiq_85_left_inner_knuckle_joint" type="fixed"> <!--continuous-->
             <parent link="${prefix}robotiq_85_base_link"/>
             <child link="${prefix}robotiq_85_left_inner_knuckle_link"/>
             <axis xyz="0 0 1"/>
@@ -152,8 +152,8 @@
             <mimic joint="${prefix}robotiq_85_left_knuckle_joint" offset="0"/>
         </joint>
 
-        <joint name="${prefix}robotiq_85_right_inner_knuckle_joint" type="continuous">
-            <parent link="${prefix}robotiq_85_base_link"/>
+        <joint name="${prefix}robotiq_85_right_inner_knuckle_joint" type="fixed"> <!--continuous-->
+            <parent link="${prefix}robotiq_85_base_link"/> 
             <child link="${prefix}robotiq_85_right_inner_knuckle_link"/>
             <axis xyz="0 0 1"/>
             <origin xyz="0.06142 -0.0127 0" rpy="0 0 0"/>
@@ -200,8 +200,8 @@
             </inertial>
         </link>
 
-        <joint name="${prefix}robotiq_85_left_finger_tip_joint" type="continuous">
-            <parent link="${prefix}robotiq_85_left_inner_knuckle_link"/>
+        <joint name="${prefix}robotiq_85_left_finger_tip_joint" type="fixed"> <!--continuous-->
+            <parent link="${prefix}robotiq_85_left_inner_knuckle_link"/> 
             <child link="${prefix}robotiq_85_left_finger_tip_link"/>
             <axis xyz="0 0 1"/>
             <origin xyz="0.04303959807 -0.03759940821 0.0" rpy="0.0 0.0 0.0"/>
@@ -209,7 +209,7 @@
             <mimic joint="${prefix}robotiq_85_left_knuckle_joint" multiplier="-1"/>
         </joint>
 
-        <joint name="${prefix}robotiq_85_right_finger_tip_joint" type="continuous">
+        <joint name="${prefix}robotiq_85_right_finger_tip_joint" type="fixed"> <!--continuous-->
             <parent link="${prefix}robotiq_85_right_inner_knuckle_link"/>
             <child link="${prefix}robotiq_85_right_finger_tip_link"/>
             <axis xyz="0 0 1"/>
