@@ -21,7 +21,7 @@
   <xacro:mobile_base />
   
   <xacro:robotiq_85_gripper prefix="" parent="${arm_prefix}tool0" >
-      <origin xyz="0.0 0 0.01" rpy="0 ${-PI/2} 0"/>
+      <origin xyz="0.0 0 0.006" rpy="0 ${-PI/2} 0"/>
   </xacro:robotiq_85_gripper>  
 
   <joint name="base_link_2_${arm_prefix}base_link" type="fixed">
@@ -79,20 +79,20 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-            <mesh filename="package://mm_description/meshes/sensors/camera_base.STL" scale="0.001 0.001 0.001"/>
+            <mesh filename="package://mm_description/meshes/sensors/camera_base.dae"/>
         </geometry>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-            <mesh filename="package://mm_description/meshes/sensors/camera_base.STL"/>
+            <mesh filename="package://mm_description/meshes/sensors/camera_base.dae"/>
         </geometry>
       </collision>
   </link>
   <joint name="${arm_prefix}tool0_2_camera_base_link" type="fixed">
     <parent link="${arm_prefix}tool0" />
     <child link="camera_base_link" />
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="0 0 0" rpy="0 1.57 0.785" />
   </joint>
   
   
@@ -124,7 +124,7 @@
   <joint name="${arm_prefix}base_link_2_xtion2_frame" type="fixed">
 	<parent link="${arm_prefix}tool0"/>
 	<child link="xtion2_frame"/>
-	<origin xyz="-0.1 0 0" rpy="0 -1.57 0"/>
+	<origin xyz="-0.114 0 0.016" rpy="0 -1.57 0"/>
   </joint>
   
   <joint name="xtion2_frame_2_xtion2_optical_frame" type="fixed">
