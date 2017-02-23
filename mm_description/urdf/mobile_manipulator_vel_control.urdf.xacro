@@ -21,7 +21,7 @@
   <xacro:mobile_base />
   
   <xacro:robotiq_85_gripper prefix="" parent="${arm_prefix}tool0" >
-      <origin xyz="0.0 0 0.0" rpy="0 ${-PI/2} 0"/>
+      <origin xyz="0.0 0 0.01" rpy="0 ${-PI/2} 0"/>
   </xacro:robotiq_85_gripper>  
 
   <joint name="base_link_2_${arm_prefix}base_link" type="fixed">
@@ -69,4 +69,87 @@
   <link name="xtion1_optical_frame" />
 
   <xacro:kinect_camera_gazebo_v0 name="xtion1" />
+  
+  <link name="camera_base_link">
+      <inertial>
+        <mass value="1e-5" />
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+            <mesh filename="package://mm_description/meshes/sensors/camera_base.STL" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+            <mesh filename="package://mm_description/meshes/sensors/camera_base.STL"/>
+        </geometry>
+      </collision>
+  </link>
+  <joint name="${arm_prefix}tool0_2_camera_base_link" type="fixed">
+    <parent link="${arm_prefix}tool0" />
+    <child link="camera_base_link" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+  
+  
+  
+  
+  <link name="xtion2_frame">
+      <inertial>
+        <mass value="1e-5" />
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+      </inertial>
+
+      <visual>
+        <origin xyz="0.0 0.0 0" rpy="1.57 0 1.57" />
+        <geometry>
+          <mesh filename="package://mm_description/meshes/sensors/asus_xtion_pro_live_camera.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+        
+      </visual>
+
+      <collision>
+        <origin xyz="0.0 0.0 0" rpy="1.57 0 1.57" />
+        <geometry>
+           <mesh filename="package://mm_description/meshes/sensors/asus_xtion_pro_live_camera.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+  </link>
+
+  <joint name="${arm_prefix}base_link_2_xtion2_frame" type="fixed">
+	<parent link="${arm_prefix}tool0"/>
+	<child link="xtion2_frame"/>
+	<origin xyz="-0.1 0 0" rpy="0 -1.57 0"/>
+  </joint>
+  
+  <joint name="xtion2_frame_2_xtion2_optical_frame" type="fixed">
+    <parent link="xtion2_frame" />
+    <child link="xtion2_optical_frame" />
+    <origin xyz="0 0 0" rpy="${-M_PI/2} 0 ${-M_PI/2}" />
+  </joint>
+  
+  <link name="xtion2_optical_frame" />
+
+  <xacro:kinect_camera_gazebo_v0 name="xtion2" />
 </robot>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

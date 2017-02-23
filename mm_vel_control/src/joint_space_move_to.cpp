@@ -16,7 +16,7 @@ ros::Publisher pub_wrist3;
 
 bool joint_data_come = false;
 Eigen::VectorXd joint_values(6);
-Eigen::MatrixXd goal_values(6, 3);
+Eigen::MatrixXd goal_values(6, 4);
 Eigen::VectorXd goal_value(6);
 
 void jointStateCallback(const sensor_msgs::JointState::ConstPtr& msg);
@@ -24,12 +24,12 @@ void jointStateCallback(const sensor_msgs::JointState::ConstPtr& msg);
 
 int main(int argc, char **argv)
 {
-    goal_values << 0, 1.48, 1.48, 
-                   0, -0.9, -0.9, 
-                   0, 0, 1.57, 
-                   0, -0.57, -0.57, 
-                   0, 1.57, 1.57, 
-                   0, 0, 0;
+    goal_values << 0,   1.48,   1.48,   1.57, 
+                   0,   -0.9,   -0.9,   0,
+                   0,   0,      1.57,   0,
+                   0,   -0.57, -0.57,   0,
+                   0,   1.57,   1.57,   0,
+                   0,   0,      0,      0;
     for(int i = 0; i < 6; ++i)
         goal_value(i) = goal_values(i, 0);
     std::cout << argv[1][0] << std::endl;
@@ -44,6 +44,12 @@ int main(int argc, char **argv)
         ROS_INFO("2");
         for(int i = 0; i < 6; ++i)
             goal_value(i) = goal_values(i, 2);
+    }
+    if (argv[1][0] == '3')
+    {
+        ROS_INFO("2");
+        for(int i = 0; i < 6; ++i)
+            goal_value(i) = goal_values(i, 3);
     }
     
     ros::init(argc, argv, "joint_space_move_to");
